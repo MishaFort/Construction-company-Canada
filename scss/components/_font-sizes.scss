@@ -1,0 +1,31 @@
+.font-size-24-35 {
+  font-size: 24px;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 35px;
+  }
+}
+
+.font-size-36-45 {
+  font-size: 36px;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 45px;
+  }
+}
+
+.font-size-40-50 {
+  font-size: 40px;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 50px;
+  }
+}
+
+.font-size-36-74 {
+  font-size: 36px;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 74px;
+  }
+}

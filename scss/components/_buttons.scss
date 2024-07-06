@@ -1,0 +1,105 @@
+.button {
+  display: block;
+  padding: 10px;
+  color: var(--color-primary-light);
+  background-color: transparent;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: 1.8px;
+
+  border: 3px solid var(--color-button-light);
+  border-radius: 30px;
+
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+
+  &:hover {
+    background-color: var(--color-button-light);
+    transform: scale(0.9);
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 17px;
+    font-size: 39px;
+  }
+
+  &--centered {
+    margin: 0 auto;
+  }
+
+  &__condusef {
+    padding: 20px;
+    background-color: var(--color-background-warm);
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-align: center;
+
+    border: 0;
+    border-radius: 45px;
+
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    transition: background-color 0.2s, transform 0.2s;
+
+    &:hover {
+      background-color: var(--color-brand-normal);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 28px 68px;
+      font-size: 34px;
+      border-radius: 90px;
+    }
+
+    &--transparent {
+      padding: 3px 30px;
+      color: var(--color-brand-normal);
+      background-color: transparent;
+      border: 5px solid var(--color-button-normal);
+      transition: color 0.2s, background-color 0.2s, transform 0.2s;
+
+      &:hover {
+        color: var(--color-primary-light);
+        background-color: var(--color-button-normal);
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        padding: 0 85px;
+        border-width: 10px;
+      }
+    }
+
+    &--light {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__contact {
+    padding: 12px 16px;
+    color: var(--color-primary-light);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: var(--color-brand-normal);
+    line-height: 1.2;
+    text-decoration: none;
+    border-radius: 3px;
+    border-width: 0;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--color-button-normal);
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 16px 32px;
+      font-size: 40px;
+      border-radius: 8px;
+    }
+  }
+}

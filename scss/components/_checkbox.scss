@@ -1,0 +1,41 @@
+.checkbox {
+  margin-top: 16px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-brand-normal);
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-top: 16px;
+  }
+
+  &__input {
+    appearance: none;
+  }
+
+  &__label {
+    position: relative;
+    left: 12px;
+    margin: 0 auto;
+    padding: 1px 0;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: -24px;
+      width: 16px;
+      height: 16px;
+      border: 1px solid var(--color-secondary-dark);
+      border-radius: 2px;
+      background-color: transparent;
+    }
+  }
+
+  &__input:checked + &__label::before {
+    content: '✔';
+    color: var(--color-primary-dark);
+  }
+}

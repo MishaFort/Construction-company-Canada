@@ -1,0 +1,35 @@
+.footer {
+  padding-top: 43px;
+  padding-bottom: 43px;
+  color: var(--color-primary-light);
+  font-family: 'Futura Md BT', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 24px;
+    padding-bottom: 60px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+  }
+
+  &__socials-icon {
+    fill: var(--color-primary-light);
+  }
+
+  &__socials-icon:hover {
+    fill: var(--color-brand-normal);
+  }
+
+  &__address-copyright {
+    color: var(--color-secondary-dark);
+    font-size: 14px;
+  }
+}

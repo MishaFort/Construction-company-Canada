@@ -1,0 +1,88 @@
+.main-list {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.main-list li {
+  position: relative;
+}
+
+.main-list li a {
+  display: block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+}
+
+.main-list li a:hover {
+  background-color: #ccc;
+}
+
+.main-list li:hover > .sub-list {
+  display: block;
+}
+
+.sub-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+}
+
+.sub-list li {
+  margin-bottom: 10px;
+}
+
+.sub-list li a {
+  display: block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+}
+
+.sub-list li a:hover {
+  background-color: #ccc;
+}
+
+////////////////////////////////////////
+
+.hero-section {
+  position: relative;
+}
+
+.hero-card {
+  &__image {
+    /*    position: absolute;
+    top: 0;
+    left: 0; */
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    /*     z-index: -1; */
+  }
+}
+
+.swiper-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-x: hidden;
+  cursor: grab;
+  z-index: -1;
+
+  &:active {
+    cursor: grabbing;
+  }
+}

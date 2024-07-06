@@ -1,0 +1,43 @@
+.hero-section {
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    max-width: 160px;
+    width: 160px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 200px;
+      width: 200px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 254px;
+      width: 254px;
+    }
+  }
+
+  &__image {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__text-part {
+    position: absolute;
+    /*  top: 70%;
+    left: 0; */
+    bottom: 20% !important;
+    width: 100% !important;
+    padding: 20px;
+    background: rgba(108, 197, 233, 0.8);
+    min-height: inherit !important;
+    font-weight: 500;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 400;
+  }
+}

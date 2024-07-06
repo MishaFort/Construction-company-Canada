@@ -1,0 +1,25 @@
+@import './utils/fonts';
+@import './utils/texts';
+@import './utils/utils';
+@import './utils/variables';
+@import './base';
+
+@import './components/buttons';
+@import './components/checkbox';
+@import './components/contact-validation';
+@import './components/font-sizes';
+@import './components/input';
+@import './components/links';
+@import './components/swiper';
+
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/mobile-menu';
+@import './layouts/popup';
+@import './layouts/section';
+
+/* @import './pages/home-page/hero-section'; */
+@import './pages/test-page/test.scss';
+@import './pages/test-page-second/test-second.scss';
