@@ -1,0 +1,20 @@
+.carousel-button {
+  position: absolute;
+  top: 38%;
+  margin-left: 32px;
+  width: 24px;
+  height: auto;
+  padding: 0;
+  fill: var(--color-primary-light);
+  background-color: transparent;
+  border: 0;
+  z-index: 2;
+  cursor: pointer;
+
+  &.next {
+    right: 0;
+    margin-left: 0;
+    margin-right: 32px;
+    transform: rotate(180deg);
+  }
+}

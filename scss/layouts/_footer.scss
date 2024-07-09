@@ -1,35 +1,106 @@
 .footer {
-  padding-top: 43px;
-  padding-bottom: 43px;
-  color: var(--color-primary-light);
-  font-family: 'Futura Md BT', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
+  padding: 20px 0;
+  background-color: var(--color-background-dark);
 
-  @media screen and (min-width: $bp-desktop) {
-    font-size: 24px;
-    padding-bottom: 60px;
+  &__container {
+    display: flex;
   }
 
-  &__socials {
+  &__logo,
+  &__links,
+  &__newsletter {
     display: flex;
     justify-content: center;
-    gap: 24px;
-    margin-top: 16px;
+    align-items: center;
+    flex: 1;
   }
 
-  &__socials-icon {
-    fill: var(--color-primary-light);
+  &__logo {
+    /*  display: flex; */
+    /*  justify-content: center;
+    align-items: center; */
+    /* flex: 1; */
+
+    &--size {
+      padding-right: 20px;
+      max-width: 380px;
+    }
   }
 
-  &__socials-icon:hover {
-    fill: var(--color-brand-normal);
+  &__links {
+    /*  display: flex; */
+    flex-direction: column;
+    /*  justify-content: center;
+    align-items: center; */
+    gap: 20px;
+    /* flex: 1; */
+    border-right: 2px solid var(--color-border-gray);
+    border-left: 2px solid var(--color-border-gray);
   }
 
-  &__address-copyright {
-    color: var(--color-secondary-dark);
-    font-size: 14px;
+  &__links-title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &__address-icon {
+    display: flex;
+    justify-content: center;
+    fill: var(--color-primary-dark);
+    cursor: pointer;
+    transition: opacity 500ms ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__address-link {
+    color: var(--color-primary-dark);
+    font-size: 21px;
+    text-decoration: none;
+    transition: opacity 500ms ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__newsletter {
+    /* display: flex; */
+    flex-direction: column;
+    /* flex: 1; */
+  }
+
+  &__newsletter-title {
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &__newsletter-text {
+    font-size: 16px;
+  }
+
+  &__form {
+    margin-top: 12px;
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+}
+
+.under-footer {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 300;
+
+  &__copyright {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    transition: opacity 500ms ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }

@@ -1,8 +1,11 @@
 :root {
   --color-primary-light: #ffffff;
+  --color-primary-dark: #707271;
+  --color-background-white: #ffffff; //найти потом и удалить дубль
+  --color-background-dark: #f2f2f2;
+  --color-border-gray: #a9a9a9;
   --color-header: #706f6f;
   --color-header-sublinks-background: #ddd;
-  --color-footer: #707271;
 }
 
 $bp-mobile: 480px;

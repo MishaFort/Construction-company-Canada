@@ -1,9 +1,15 @@
 .just-validate-error-label,
 .just-validate-success-label {
   padding-top: 3px;
-  font-size: 14px;
+  padding-bottom: 4px;
+  padding: 0 0 4px 8px;
+  font-size: 12px;
 
   @media screen and (min-width: $bp-tablet) {
-    font-size: 16px;
+    font-size: 14px;
   }
+}
+
+.just-validate-success-label {
+  color: green;
 }

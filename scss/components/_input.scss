@@ -1,35 +1,24 @@
 .input {
   display: flex;
-  max-height: 40px;
-  margin-bottom: 16px;
-  padding: 8px 24px;
-  width: 320px;
-  width: calc(320px + (100vw - 360px) * 0.5);
-  fill: var(--color-brand-normal);
-  border: 1px solid var(--color-brand-normal);
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid var(--color-primary-dark);
   border-radius: 8px;
-  background-color: transparent;
+  background-color: var(--color-background-white);
 
   @media screen and (min-width: $bp-tablet) {
-    max-height: 48px;
-    margin-bottom: 24px;
-    padding: 8px 40px;
-    width: 670px;
+    max-height: 38px;
+    padding: 8px;
+    max-width: 506px;
   }
 
-  &__icon {
-    width: 24px;
-    height: 24px;
-
-    @media screen and (min-width: $bp-tablet) {
-      width: 32px;
-      height: 32px;
-    }
+  &:focus-within {
+    border: 2px solid black;
   }
 
-  &__text {
+  /*  &__text {
     flex-grow: 1;
-  }
+  } */
 
   &__label {
     display: block;
@@ -41,9 +30,10 @@
     width: 100%;
     font-size: 16px;
     line-height: 1.2;
-    padding: 2.5px 8px;
+    /* padding: 2.5px 8px; */
     border: none;
     background-color: transparent;
+    /*  text-align: left; */
 
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
@@ -56,10 +46,13 @@
     }
 
     @media screen and (min-width: $bp-tablet) {
-      font-size: 20px;
+      color: var(--color-primary-dark);
+      font-size: 15px;
+      font-weight: 300;
       line-height: 1;
-      padding: 4.5px 8px;
-      letter-spacing: 0.05em;
+      /* padding: 8px; */
+      text-align: center;
+      text-align: left;
     }
 
     &:focus {
@@ -67,20 +60,16 @@
     }
 
     &::placeholder {
-      color: var(--color-brand-normal);
-      transition: color 0.2s;
-    }
-
-    &:focus::placeholder {
-      color: var(--color-primary-dark);
+      text-align: center;
     }
   }
 
   &__button-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 8px;
+    max-width: 506px;
+    /* align-items: center; */
+    /*  padding-top: 8px; */
 
     @media screen and (min-width: $bp-tablet) {
       padding-top: 0;

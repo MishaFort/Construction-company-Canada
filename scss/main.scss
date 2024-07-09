@@ -5,6 +5,7 @@
 @import './base';
 
 @import './components/buttons';
+@import './components/carousel-button';
 @import './components/checkbox';
 @import './components/contact-validation';
 @import './components/font-sizes';
@@ -20,6 +21,6 @@
 @import './layouts/popup';
 @import './layouts/section';
 
-/* @import './pages/home-page/hero-section'; */
+@import './pages/home-page/projects-section';
 @import './pages/test-page/test.scss';
 @import './pages/test-page-second/test-second.scss';

@@ -1,0 +1,21 @@
+.projects-section {
+  padding: 60px 56px;
+  color: var(--color-primary-dark);
+
+  &__text-part {
+    max-width: 850px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  &__tagline {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
