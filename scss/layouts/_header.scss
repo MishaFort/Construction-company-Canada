@@ -44,6 +44,14 @@
       width: 65%;
       border: 0;
     }
+
+    &--invisible {
+      display: none;
+    }
+
+    &--visible {
+      display: block;
+    }
   }
 
   .header__link:hover > .header__sub-list {

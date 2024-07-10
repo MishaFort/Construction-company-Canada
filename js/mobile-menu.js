@@ -19,3 +19,16 @@ menuBtnClose.addEventListener('click', toggleMenu);
 mobileMenuLinks.forEach(link => {
   link.addEventListener('click', toggleMenu);
 });
+
+const activitiesLink = document.querySelector('.link--first-click');
+
+let isFirstClick = true;
+activitiesLink.addEventListener('click', e => {
+  if (isFirstClick) {
+    e.preventDefault();
+    activitiesLink.nextElementSibling.classList.add(
+      'header__sub-list--visible'
+    );
+    isFirstClick = false;
+  }
+});
