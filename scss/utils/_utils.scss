@@ -8,17 +8,19 @@
 }
 
 .overlay {
-  position: absolute;
-  /*  margin: 0 -24px; */
-  /*  top: 0; */
-  left: 0;
-  bottom: 20%;
-  width: 100%;
-  height: 107.5px;
-  /* pointer-events: none; */
-  /* overflow: hidden;
-  cursor: default; */
-  /* touch-action: none; */
-  /*  opacity: 0; */
-  z-index: 2;
+  display: none;
+
+  @media screen and (min-width: 1140px) {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    width: 100%;
+    height: 130px;
+    z-index: 2;
+  }
+
+  @media screen and (min-width: 1847px) {
+    height: 107.5px;
+  }
 }

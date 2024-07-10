@@ -66,6 +66,77 @@
             </li>
           </ul>
         </nav>
+
+        <div class="header__container">
+          <a class="header__logo" href="/">
+            <img
+              class="header__logo--size"
+              src="./images/logo.png"
+              alt="Logo 'Canada Phoenix'"
+            />
+          </a>
+
+          <button class="header__burger menu-btn-open" type="button">
+            <p class="visually-hidden">Open burger menu</p>
+            <p class="header__burger--text">MENU</p>
+            <svg width="24" height="30">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <p class="visually-hidden">Close burger menu</p>
+              <svg width="28" height="28">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <ul class="header__mobile-menu">
+              <li class="header__link">
+                <a class="link link--active link--borderless" href="/">Home</a>
+              </li>
+              <li class="header__link">
+                <a class="link" href="#">Activities</a>
+                <svg class="header__arrow" width="20" height="20">
+                  <use href="./images/icons.svg#icon-right-arrow"></use>
+                </svg>
+                <ul class="header__sub-list">
+                  <li>
+                    <a class="header__sub-link" href="#">
+                      Railway Construction
+                    </a>
+                  </li>
+                  <li>
+                    <a class="header__sub-link" href="#"> Civil Engineering </a>
+                  </li>
+                  <li>
+                    <a class="header__sub-link" href="#"> Telecoms </a>
+                  </li>
+                  <li>
+                    <a class="header__sub-link" href="#"> Multi-Utilities </a>
+                  </li>
+                  <li>
+                    <a class="header__sub-link" href="#"> Power Networks </a>
+                  </li>
+                  <li>
+                    <a class="header__sub-link" href="#">
+                      General Construction
+                    </a>
+                  </li>
+                  <li>
+                    <a class="header__sub-link" href="#">
+                      Design & Consultancy
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__link">
+                <a class="link" href="#">Get in touch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -108,7 +179,7 @@
 
                 <div class="hero-section__text-part">
                   <h1 class="hero-section__title">What we do</h1>
-                  <p>
+                  <p class="hero-section__text">
                     We have expansive experience within civil and structural,
                     telecoms, signalling, mechanical and electrical engineering
                     and offer both standalone services and a fully integrated
@@ -128,7 +199,7 @@
                 />
                 <div class="hero-section__text-part">
                   <h1 class="hero-section__title">About Us</h1>
-                  <p>
+                  <p class="hero-section__text">
                     The Global Infrastructure Group of companies consists of UK
                     based Global Rail Construction Ltd, Irish based Global Rail
                     Services Ltd, Australian based Global Rail Australia Pty Ltd
@@ -154,7 +225,7 @@
       <section class="projects-section">
         <div class="container">
           <div class="projects-section__text-part">
-            <h1 class="projects-section__title">Our Projects</h1>
+            <h1 class="projects-section__title text-underline">Our Projects</h1>
             <p class="projects-section__tagline">
               The nature of our high-value services means we are involved in
               complex projects. These projects often require a combination of
@@ -248,7 +319,7 @@
         </div>
       </section>
       <section class="under-footer">
-        <p class="under-footer__year">&copy;Canada Phoenix</p>
+        <p class="copyright__year">&copy;Canada Phoenix</p>
         <a class="under-footer__copyright" href="#" target="_blank">
           Privacy & Cookie Policy
         </a>
@@ -256,7 +327,7 @@
     </footer>
 
     <script>
-      const copyrightElement = document.querySelector('.under-footer__year');
+      const copyrightElement = document.querySelector('.copyright__year');
       const currentYear = new Date().getFullYear();
       copyrightElement.textContent = `\u00A9${currentYear} Canada Phoenix`;
     </script>
@@ -270,5 +341,6 @@
     <!--   <script src="./js/sections.js"></script> -->
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="./js/footer-form-validator.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

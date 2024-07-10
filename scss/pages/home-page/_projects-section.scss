@@ -1,6 +1,17 @@
 .projects-section {
-  padding: 60px 56px;
+  margin: 30px 0;
+  padding: 24px 0;
   color: var(--color-primary-dark);
+  background-color: #eaf3d5;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin: 40px 0;
+    padding: 24px 36px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    margin: 60px 0;
+  }
 
   &__text-part {
     max-width: 850px;
@@ -11,11 +22,27 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 1.55;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 42px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 46px;
+    }
   }
 
   &__tagline {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.2;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-weight: 600;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-weight: 700;
+    }
   }
 }

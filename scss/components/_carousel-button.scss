@@ -1,6 +1,7 @@
 .carousel-button {
   position: absolute;
-  top: 38%;
+  /* top: calc(18%); */
+  top: calc(18% + 0.16 * (100vw - 360px));
   margin-left: 32px;
   width: 24px;
   height: auto;
@@ -10,6 +11,10 @@
   border: 0;
   z-index: 2;
   cursor: pointer;
+
+  @media screen and (min-width: $bp-tablet) {
+    top: 38%;
+  }
 
   &.next {
     right: 0;

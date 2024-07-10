@@ -1,14 +1,15 @@
 .input {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  /* display: flex; */
+  /*   flex-direction: column; */
+  /*  gap: 6px; */
+  height: 36px;
   border: 1px solid var(--color-primary-dark);
   border-radius: 8px;
   background-color: var(--color-background-white);
 
   @media screen and (min-width: $bp-tablet) {
     max-height: 38px;
-    padding: 8px;
+    /* padding: 8px; */
     max-width: 506px;
   }
 
@@ -28,29 +29,18 @@
     display: block;
     flex-basis: 100%;
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.2;
-    /* padding: 2.5px 8px; */
+    padding: 8px;
+    padding-bottom: 5px;
     border: none;
     background-color: transparent;
-    /*  text-align: left; */
-
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover,
-    &:-webkit-autofill:focus,
-    &:-webkit-autofill:active {
-      border: none;
-      outline: none;
-      -webkit-text-fill-color: inherit;
-      -webkit-box-shadow: 0 0 0 1000px #d6ccd4 inset;
-    }
 
     @media screen and (min-width: $bp-tablet) {
       color: var(--color-primary-dark);
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 300;
-      line-height: 1;
-      /* padding: 8px; */
+      padding-bottom: 4px;
       text-align: center;
       text-align: left;
     }
@@ -62,17 +52,22 @@
     &::placeholder {
       text-align: center;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      -webkit-text-fill-color: inherit;
+      -webkit-box-shadow: 0 0 0 1000px var(--color-primary-light) inset;
+    }
   }
 
   &__button-container {
     display: flex;
     flex-direction: column;
     max-width: 506px;
-    /* align-items: center; */
-    /*  padding-top: 8px; */
-
-    @media screen and (min-width: $bp-tablet) {
-      padding-top: 0;
-    }
   }
 }
