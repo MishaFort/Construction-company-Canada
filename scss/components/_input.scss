@@ -1,25 +1,17 @@
 .input {
-  /* display: flex; */
-  /*   flex-direction: column; */
-  /*  gap: 6px; */
   height: 36px;
   border: 1px solid var(--color-primary-dark);
   border-radius: 8px;
-  background-color: var(--color-background-white);
+  background-color: var(--color-primary-light);
 
   @media screen and (min-width: $bp-tablet) {
     max-height: 38px;
-    /* padding: 8px; */
     max-width: 506px;
   }
 
   &:focus-within {
     border: 2px solid black;
   }
-
-  /*  &__text {
-    flex-grow: 1;
-  } */
 
   &__label {
     display: block;

@@ -31,14 +31,9 @@
   }
 
   &__links {
-    /*  display: flex; */
     padding: 20px 0;
     flex-direction: column;
-    /*  justify-content: center;
-    align-items: center; */
     gap: 20px;
-
-    /* flex: 1; */
     border-top: 2px solid var(--color-border-gray);
     border-bottom: 2px solid var(--color-border-gray);
 
@@ -80,9 +75,7 @@
   }
 
   &__newsletter {
-    /* display: flex; */
     flex-direction: column;
-    /* flex: 1; */
   }
 
   &__newsletter-title {

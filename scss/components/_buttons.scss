@@ -1,33 +1,4 @@
 .button {
-  /*   display: block;
-  padding: 10px;
-  color: var(--color-primary-light);
-  background-color: transparent;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 32px;
-  line-height: 1.1;
-  letter-spacing: 1.8px;
-
-  border: 3px solid var(--color-button-light);
-  border-radius: 30px;
-
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
-
-  &:hover {
-    background-color: var(--color-button-light);
-    transform: scale(0.9);
-  }
-
-  @media screen and (min-width: $bp-desktop) {
-    padding: 17px;
-    font-size: 39px;
-  }
-
-  &--centered {
-    margin: 0 auto;
-  } */
-
   &__contact {
     margin-top: 10px;
     padding: 3px 5px;
@@ -47,11 +18,5 @@
     &:hover {
       opacity: 0.6;
     }
-
-    /* @media screen and (min-width: $bp-desktop) {
-      padding: 16px 32px;
-      font-size: 40px;
-      border-radius: 8px;
-    } */
   }
 }

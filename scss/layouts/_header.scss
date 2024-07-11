@@ -6,7 +6,6 @@
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
-    /* z-index: 2; */
   }
 
   &__menu {
@@ -16,7 +15,6 @@
       display: flex;
       justify-content: center;
       flex-grow: 1;
-      /*  gap: 16px; */
     }
   }
 
@@ -61,7 +59,6 @@
   &__sub-link {
     display: block;
     padding: 8px 15px;
-    /* width: 180px; */
     color: var(--color-header);
     background: linear-gradient(to bottom, #fffafa, #fff);
     font-size: 18px;
@@ -127,8 +124,6 @@
   }
 
   &__logo {
-    /* display: block; */
-
     @media screen and (min-width: $bp-desktop) {
       display: none;
     }

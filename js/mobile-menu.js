@@ -23,12 +23,39 @@ mobileMenuLinks.forEach(link => {
 const activitiesLink = document.querySelector('.link--first-click');
 
 let isFirstClick = true;
+
 activitiesLink.addEventListener('click', e => {
   if (isFirstClick) {
     e.preventDefault();
-    activitiesLink.nextElementSibling.classList.add(
+    activitiesLink.nextElementSibling.classList.toggle(
       'header__sub-list--visible'
     );
     isFirstClick = false;
+  } else {
+    if (
+      activitiesLink.nextElementSibling.classList.contains(
+        'header__sub-list--visible'
+      )
+    ) {
+      return;
+    } else {
+      e.preventDefault();
+      activitiesLink.nextElementSibling.classList.toggle(
+        'header__sub-list--visible'
+      );
+      isFirstClick = false;
+    }
+  }
+});
+
+document.addEventListener('click', e => {
+  if (
+    !activitiesLink.contains(e.target) &&
+    !activitiesLink.nextElementSibling.contains(e.target)
+  ) {
+    activitiesLink.nextElementSibling.classList.remove(
+      'header__sub-list--visible'
+    );
+    isFirstClick = true;
   }
 });

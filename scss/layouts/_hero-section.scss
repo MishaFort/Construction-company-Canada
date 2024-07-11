@@ -20,22 +20,13 @@
 
   &__slider {
     position: relative;
-    /* display: flex;
-    align-items: center; */
-    /*   gap: 32px; */
   }
 
   &__button {
     display: flex;
-
-    /*    @media screen and (min-width: $bp-tablet) {
-      display: flex;
-    } */
   }
 
   &__image {
-    /* display: inline-block;
-    vertical-align: middle; */
     max-width: 100%;
     height: auto;
   }
@@ -52,19 +43,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    /*  top: 70%;
-    left: 0; */
     bottom: 20%;
     width: 100%;
     height: 220px;
-    /*  height: 130px; */
     padding: 10px 20px 20px;
     color: var(--color-primary-light);
     background: rgba(108, 197, 233);
-    /* min-height: inherit !important; */
     font-weight: 500;
-    /* pointer-events: none; */ //вот эта
     cursor: default;
 
     @media screen and (min-width: $bp-tablet) {
@@ -78,18 +63,9 @@
       background: rgba(108, 197, 233, 0.8);
       transform: ease;
     }
-
-    /*     & * {
-      pointer-events: none;
-    }
-
-    &:hover {
-      transform: none;
-    } */
   }
 
   &__title {
-    /* font-size: 30px; */
     font-size: 36px;
     font-weight: 500;
 
@@ -99,7 +75,7 @@
 
     @keyframes appear {
       to {
-        opacity: 1; /* final state: visible */
+        opacity: 1;
       }
     }
 
@@ -109,22 +85,15 @@
   }
 
   &__text {
-    /* font-size: 16px; */
     font-size: 18px;
-    /*  line-height: 1.5; */
     opacity: 0;
     animation: appear 450ms ease forwards;
     animation-delay: 450ms;
 
     @keyframes appear {
       to {
-        opacity: 1; /* final state: visible */
+        opacity: 1;
       }
-    }
-
-    @media screen and (min-width: $bp-tablet) {
-      /* font-size: 18px; */
-      /*   line-height: 1.25; */
     }
   }
 }

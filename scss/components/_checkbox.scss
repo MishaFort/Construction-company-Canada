@@ -1,15 +1,9 @@
 .checkbox {
   margin-top: 16px;
-
   font-size: 13px;
   font-weight: 400;
   line-height: 1.7;
-  /* text-align: center; */
   color: var(--color-brand-normal);
-
-  /* @media screen and (min-width: $bp-tablet) {
-    margin-top: 16px;
-  } */
 
   &__input {
     appearance: none;
@@ -34,7 +28,7 @@
       height: 13px;
       border: 1px solid var(--color-primary-dark);
       border-radius: 2px;
-      background-color: var(--color-background-white);
+      background-color: var(--color-primary-light);
     }
   }
 
