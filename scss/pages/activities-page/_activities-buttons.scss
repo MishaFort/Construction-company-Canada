@@ -1,0 +1,7 @@
+.activities-buttons {
+  padding: 15px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 15px 70px;
+  }
+}
