@@ -1,0 +1,47 @@
+.get-in-touch-section {
+  position: relative;
+  /* margin: 0 auto; */
+  padding: 40px 0 52px; //check mobile
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-left: 300px;
+    padding-bottom: 80px;
+    background-image: url('/images/activ_bg.png');
+    /* background-position: 0 50px; */
+    background-repeat: no-repeat;
+    background-size: 260px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    padding: 0 24px;
+  }
+
+  &__info-part {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  &__logo--size {
+    width: 300px;
+    height: 102px;
+  }
+
+  &__map {
+    flex-basis: 60%;
+  }
+
+  &__form-container {
+    padding: 0 24px;
+  }
+
+  &__form-title {
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+}

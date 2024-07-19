@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Construction Company in Canada" />
     <title>Canada Phoenix</title>
-    <link rel="stylesheet" href="./css/home-page.min.css" />
+    <link rel="stylesheet" href="./css/get-in-touch-page.min.css" />
 
     <!--  <link
       rel="icon"
@@ -27,7 +27,7 @@
         <nav class="header__nav">
           <ul class="header__menu">
             <li class="header__link">
-              <a class="link link--active link--borderless" href="">Home</a>
+              <a class="link link--borderless" href="/">Home</a>
             </li>
             <li class="header__link">
               <a class="link" href="/activities.html">Activities</a>
@@ -91,7 +91,7 @@
               </ul>
             </li>
             <li class="header__link">
-              <a class="link" href="/get-in-touch.html">Get in touch</a>
+              <a class="link link--active" href="">Get in touch</a>
             </li>
           </ul>
         </nav>
@@ -168,7 +168,6 @@
         </div>
       </div>
     </header>
-
     <!--                    Main                      -->
     <main>
       <!--                   Section 1                       -->
@@ -250,20 +249,80 @@
           </button>
         </div>
       </section>
-      <!--                   Section 2                       -->
-      <section class="projects-section">
-        <div class="container">
-          <div class="projects-section__text-part">
-            <h1 class="projects-section__title text-underline">Our Projects</h1>
-            <p class="projects-section__tagline">
-              The nature of our high-value services means we are involved in
-              complex projects. These projects often require a combination of
-              our activities and services in order to deliver the optimum result
-              for our clients. Recognising that each industry and sector of
-              activity has its own processes, we offer solutions specific to
-              their needs.
-            </p>
+      <section class="get-in-touch-section">
+        <div class="get-in-touch-section__container">
+          <div class="get-in-touch-section__info-part">
+            <a class="get-in-touch-section__logo" href="/">
+              <img
+                class="get-in-touch-section__logo--size"
+                src="./images/logo.png"
+                alt="Logo 'Canada Phoenix'"
+              />
+            </a>
+            <p class="get-in-touch-section__info">Address Exapmle</p>
           </div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10160.512221593612!2d30.48970704760742!3d50.457340059028176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1721388920505!5m2!1sru!2sua"
+            width="100%"
+            height="350"
+            style="border: 0; border-radius: 15px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+
+        <div class="get-in-touch-section__form-container">
+          <h2 class="get-in-touch-section__form-title">Contact Form</h2>
+
+          <form
+            name="get-in-touch-section-form"
+            autocomplete="on"
+            id="get-in-touch-section-form"
+          >
+            <div class="input input--unlimited">
+              <label
+                class="input__label visually-hidden"
+                for="user-email-contact"
+              >
+                Email
+              </label>
+              <input
+                class="input__control input__control--autocompleted"
+                type="email"
+                name="user-email-contact"
+                id="user-email-contact"
+                placeholder="Email"
+              />
+            </div>
+
+            <div
+              class="input__button-container input__button-container--unlimited"
+            >
+              <div class="checkbox">
+                <input
+                  class="checkbox__input visually-hidden"
+                  type="checkbox"
+                  id="terms-conditions-contact"
+                  name="terms-conditions-contact"
+                />
+                <label
+                  class="checkbox__label checkbox__label--left-sided"
+                  for="terms-conditions-contact"
+                  id="terms-conditions-label-contact"
+                >
+                  Please tick to agree that you have read our Privacy Policy,
+                  and that you agree to receive emails from Global
+                  Infrastructure Group. Your email will not be used for any
+                  other purpose.
+                </label>
+              </div>
+
+              <button class="button__contact" type="submit">Subscribe</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -358,9 +417,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/hero-slider.js"></script>
-
-    <!--   <script src="./js/sections.js"></script> -->
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="./js/get-in-touch-form-validator.js"></script>
     <script src="./js/footer-form-validator.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

@@ -27,42 +27,50 @@
         <nav class="header__nav">
           <ul class="header__menu">
             <li class="header__link">
-              <a class="link link--active link--borderless" href="/">Home</a>
+              <a class="link link--borderless" href="/">Home</a>
             </li>
             <li class="header__link">
-              <a class="link" href="">Activities</a>
+              <a class="link link--active" href="">Activities</a>
               <ul class="header__sub-list">
                 <li>
-                  <a class="header__sub-link" href="#">
+                  <button type="button" class="header__sub-link">
                     Railway Construction
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a class="header__sub-link" href="#"> Civil Engineering </a>
+                  <button type="button" class="header__sub-link">
+                    Civil Engineering
+                  </button>
                 </li>
                 <li>
-                  <a class="header__sub-link" href="#"> Telecoms </a>
+                  <button type="button" class="header__sub-link">
+                    Telecoms
+                  </button>
                 </li>
                 <li>
-                  <a class="header__sub-link" href="#"> Multi-Utilities </a>
+                  <button type="button" class="header__sub-link">
+                    Multi-Utilities
+                  </button>
                 </li>
                 <li>
-                  <a class="header__sub-link" href="#"> Power Networks </a>
+                  <button type="button" class="header__sub-link">
+                    Power Networks
+                  </button>
                 </li>
                 <li>
-                  <a class="header__sub-link" href="#">
+                  <button type="button" class="header__sub-link">
                     General Construction
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a class="header__sub-link" href="#">
+                  <button type="button" class="header__sub-link">
                     Design & Consultancy
-                  </a>
+                  </button>
                 </li>
               </ul>
             </li>
             <li class="header__link">
-              <a class="link" href="#">Get in touch</a>
+              <a class="link" href="/get-in-touch.html">Get in touch</a>
             </li>
           </ul>
         </nav>
@@ -142,7 +150,7 @@
 
     <!--                    Main                      -->
     <main>
-      <!--                   Main section                       -->
+      <!--                   Hero section                       -->
       <section class="hero-section">
         <a class="hero-section__logo" href="/">
           <img
@@ -221,7 +229,7 @@
           </button>
         </div>
       </section>
-      <!--                   Section Buttons                      -->
+      <!--                  Main section                       -->
       <section class="activities-list">
         <!--  <div class="container"> -->
         <div class="activities-list__container">
@@ -245,7 +253,10 @@
 
           <ul class="activities-list__icons-list">
             <li class="activities-list__icons-item">
-              <a class="activities-list__link" href="#">
+              <a
+                class="activities-list__link"
+                href="#activities-railway-construction"
+              >
                 <img
                   class="activities-list__icon"
                   src="./images/activities-railway.webp"
@@ -257,7 +268,10 @@
               </a>
             </li>
             <li class="activities-list__icons-item">
-              <a class="activities-list__link" href="#">
+              <a
+                class="activities-list__link"
+                href="#activities-civil-engineering"
+              >
                 <img
                   class="activities-list__icon"
                   src="./images/activities-civil.webp"
@@ -267,7 +281,7 @@
               </a>
             </li>
             <li class="activities-list__icons-item">
-              <a class="activities-list__link" href="#">
+              <a class="activities-list__link" href="#activities-telecoms">
                 <img
                   class="activities-list__icon"
                   src="./images/activities-telecoms.webp"
@@ -277,7 +291,10 @@
               </a>
             </li>
             <li class="activities-list__icons-item">
-              <a class="activities-list__link" href="#">
+              <a
+                class="activities-list__link"
+                href="#activities-multi-utilities"
+              >
                 <img
                   class="activities-list__icon"
                   src="./images/activities-multi-utilities.webp"
@@ -287,7 +304,10 @@
               </a>
             </li>
             <li class="activities-list__icons-item">
-              <a class="activities-list__link" href="#">
+              <a
+                class="activities-list__link"
+                href="#activities-power-networks"
+              >
                 <img
                   class="activities-list__icon"
                   src="./images/activities-power-networks.webp"
@@ -297,7 +317,10 @@
               </a>
             </li>
             <li class="activities-list__icons-item">
-              <a class="activities-list__link" href="#">
+              <a
+                class="activities-list__link"
+                href="#activities-general-construction"
+              >
                 <img
                   class="activities-list__icon"
                   src="./images/activities-general-construction.webp"
@@ -309,7 +332,10 @@
               </a>
             </li>
             <li class="activities-list__icons-item">
-              <a class="activities-list__link" href="#">
+              <a
+                class="activities-list__link"
+                href="#activities-design-consultancy"
+              >
                 <img
                   class="activities-list__icon"
                   src="./images/activities-design.webp"
@@ -325,23 +351,33 @@
         <!-- </div> -->
       </section>
       <!--                   Section 2                       -->
-      <!-- <section class="activities-buttons">
-        <div class="container">
-          <div class="activities-buttons__container">
-            <button class="button" type="button">Railway Construction</button>
-            <button>Civil Engineering</button>
-            <button>Telecoms</button>
-            <button>Multi-Utilities</button>
-            <button>Power Networks</button>
-            <button>General Construction</button>
-            <button>Design & Consultancy</button>
-          </div>
+      <section class="activities-buttons">
+        <div class="activities-buttons__container">
+          <button class="button" type="button">Railway Construction</button>
+          <button class="button button__left-border" type="button">
+            Civil Engineering
+          </button>
+          <button class="button button__left-border" type="button">
+            Telecoms
+          </button>
+          <button class="button button__left-border" type="button">
+            Multi-Utilities
+          </button>
+          <button class="button button__left-border" type="button">
+            Power Networks
+          </button>
+          <button class="button button__left-border" type="button">
+            General Construction
+          </button>
+          <button class="button button__left-border" type="button">
+            Design & Consultancy
+          </button>
         </div>
-      </section> -->
+      </section>
       <!--                   Section 1                     -->
       <section class="activities-section">
         <div class="container">
-          <div id="1">
+          <div style="display: none" id="activities-railway-construction">
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
@@ -350,7 +386,7 @@
               />
               Railway Construction
             </h1>
-            <div class="activities-section__container">
+            <div class="activities-section__content-container">
               <div class="activities-section__image-part">
                 <img
                   class="activities-section__image"
@@ -393,7 +429,7 @@
             </div>
           </div>
 
-          <div id="2">
+          <div style="display: none" id="activities-civil-engineering">
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
@@ -402,7 +438,7 @@
               />
               Civil Engineering
             </h1>
-            <div class="activities-section__container">
+            <div class="activities-section__content-container">
               <div class="activities-section__image-part">
                 <img
                   class="activities-section__image"
@@ -448,7 +484,7 @@
             </div>
           </div>
 
-          <div id="3">
+          <div style="display: none" id="activities-telecoms">
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
@@ -457,7 +493,7 @@
               />
               Telecoms
             </h1>
-            <div class="activities-section__container">
+            <div class="activities-section__content-container">
               <div class="activities-section__image-part">
                 <img
                   class="activities-section__image"
@@ -505,6 +541,192 @@
                     Tower construction, retro-fit, maintenance and inspection
                   </li>
                   <li>Operation and maintenance services</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: none" id="activities-multi-utilities">
+            <h1 class="activities-section__title">
+              <img
+                class="activities-section__icon"
+                src="./images/activities-multi-utilities.webp"
+                alt="Multi-Utilities icon"
+              />
+              Multi-Utilities
+            </h1>
+            <div class="activities-section__content-container">
+              <div class="activities-section__image-part">
+                <img
+                  class="activities-section__image"
+                  src="./images/activities-multi-utilities.webp"
+                  alt="Multi-Utilities example"
+                />
+              </div>
+              <div class="activities-section__text-part">
+                <p class="activities-section__tagline">
+                  Global Infrastructure Group have an in-depth understanding of
+                  the changing nature of the utilities market.
+                </p>
+                <p class="activities-section__text">
+                  This combined with our expertise and experience in design and
+                  construction enables us to offer a full range of services for
+                  the provision of new infrastructure.
+                </p>
+                <p class="activities-section__text">
+                  Clients benefit from us identifying options for procurement,
+                  installation and potential adoption by host utilities,
+                  retention of private networks and installation by independent
+                  Infrastructure Service Providers (ISPs).
+                </p>
+                <p class="activities-section__text">
+                  We are pride ourselves on our service delivery, which is both
+                  safe and responsible to the environment and the communities we
+                  serve and are proud of the long-term partnerships we have
+                  established with our clients within this sector of our
+                  operations.
+                </p>
+                <p class="activities-section__text">
+                  Our experience covers installation and connections in Gas,
+                  Electricity, Water and Communications across multiple sectors
+                  in both commercial and domestic situations.
+                </p>
+                <p class="activities-section__text">
+                  We have a strong track record of delivering innovative
+                  solutions for multi-utility projects, providing a fully
+                  managed offering, which is backed up by in-house design,
+                  engineering and delivery teams.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: none" id="activities-power-networks">
+            <h1 class="activities-section__title">
+              <img
+                class="activities-section__icon"
+                src="./images/activities-power-networks.webp"
+                alt="Power Networks icon"
+              />
+              Power Networks
+            </h1>
+            <div class="activities-section__content-container">
+              <div class="activities-section__image-part">
+                <img
+                  class="activities-section__image"
+                  src="./images/activities-power-networks.webp"
+                  alt="Power Networks example"
+                />
+              </div>
+              <div class="activities-section__text-part">
+                <p class="activities-section__tagline">
+                  Global Infrastructure Group provide full turnkey Mechanical,
+                  Electrical and Power services that are constantly upgraded
+                  through rigorous training and development and are consistently
+                  delivered to the highest level.
+                </p>
+                <p class="activities-section__text">
+                  Our fully managed offering includes the design, installation
+                  and commissioning of these specialist services, which are
+                  deployed for commercial and industrial clients for their power
+                  network projects.
+                </p>
+                <p class="activities-section__text">
+                  Our range of services include:
+                </p>
+                <ul class="activities-section__list">
+                  <li>Sub-station refurbishments and new builds</li>
+                  <li>CCTV, access and security system installations</li>
+                  <li>Building management control systems</li>
+                  <li>Cable installation and management</li>
+                  <li>Lighting renewal and refurbishment</li>
+                  <li>Lighting control systems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: none" id="activities-general-construction">
+            <h1 class="activities-section__title">
+              <img
+                class="activities-section__icon"
+                src="./images/activities-general-construction.webp"
+                alt="General Construction icon"
+              />
+              General Construction
+            </h1>
+            <div class="activities-section__content-container">
+              <div class="activities-section__image-part">
+                <img
+                  class="activities-section__image"
+                  src="./images/activities-general-construction.webp"
+                  alt="General Construction example"
+                />
+              </div>
+              <div class="activities-section__text-part">
+                <p class="activities-section__tagline">
+                  Global Infrastructure Group supports the safe operation,
+                  management and development of both existing and new assets.
+                </p>
+                <p class="activities-section__text">
+                  We provide turnkey general construction solutions for
+                  industrial and commercial projects, from acquisition to
+                  completion, tailored to suit each client’s specific
+                  requirements.
+                </p>
+                <p class="activities-section__text">
+                  This can include the specialist skills and trades needed for
+                  the construction of sub-stations, industrial and commercial
+                  warehousing and new build or refurbishment projects including
+                  listed structures, incorporating power, telecoms and
+                  signalling equipment rooms.
+                </p>
+                <p class="activities-section__text">
+                  Our ultimate aim is to assist our clients to reduce the risks
+                  associated with their construction, maintenance and
+                  refurbishment projects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: none" id="activities-design-consultancy">
+            <h1 class="activities-section__title">
+              <img
+                class="activities-section__icon"
+                src="./images/activities-design.webp"
+                alt="Design & Consultancy icon"
+              />
+              Design & Consultancy
+            </h1>
+            <div class="activities-section__content-container">
+              <div class="activities-section__image-part">
+                <img
+                  class="activities-section__image"
+                  src="./images/activities-design.webp"
+                  alt="Design & Consultancy example"
+                />
+              </div>
+              <div class="activities-section__text-part">
+                <p class="activities-section__tagline">
+                  Global Infrastructure Group’s design and consultancy division
+                  constantly adapts to new technology and innovation.
+                </p>
+                <p class="activities-section__text">
+                  State-of-the-art computer-aided design and simulation systems
+                  are used to assist with analysis and design, providing
+                  significant advantages for clients by lowering project costs
+                  and reducing programmes timescales.
+                </p>
+                <p class="activities-section__text">
+                  Our in-house activities include:
+                </p>
+                <ul class="activities-section__list">
+                  <li>Civil engineering and structural design</li>
+                  <li>Mechanical, electrical and power design</li>
+                  <li>Telecoms design</li>
+                  <li>CAD drafting and design including 3D modelling</li>
+                  <li>Independent design reviews</li>
                 </ul>
               </div>
             </div>
@@ -578,7 +800,7 @@
                       </label>
                     </div>
 
-                    <button class="button__contact" type="submit">
+                    <button class="button button__contact" type="submit">
                       Subscribe
                     </button>
                   </div>
@@ -604,9 +826,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/hero-slider.js"></script>
 
+    <script src="./js/activities-page.js"></script>
+
     <!--   <script src="./js/sections.js"></script> -->
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="./js/footer-form-validator.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/mobile-menu.js"></script> -->
   </body>
 </html>

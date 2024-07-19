@@ -19,6 +19,10 @@
     max-width: 500px;
     cursor: pointer;
 
+    &--left-sided {
+      margin: 0;
+    }
+
     &::before {
       position: absolute;
       content: '';

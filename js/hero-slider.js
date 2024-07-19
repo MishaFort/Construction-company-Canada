@@ -1,4 +1,8 @@
 const swiper = new Swiper('.swiper-container', {
+  /*  lazy: {
+    loadPrevNext: false,
+    loadOnTransitionStart: false,
+  }, */
   loop: true,
   slidesPerView: 1,
   //autoplay: {

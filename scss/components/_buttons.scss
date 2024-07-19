@@ -1,17 +1,41 @@
 .button {
+  padding: 0 10px;
+  color: var(--color-primary-dark);
+  background-color: transparent;
+  font-family: 'Futura PT', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  border: none;
+
+  cursor: pointer;
+  transition: opacity 500ms ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &__left-border {
+    border-left: solid 1px var(--color-primary-dark);
+  }
+
+  &__active {
+    text-decoration: underline;
+  }
+
   &__contact {
     margin-top: 10px;
     padding: 3px 5px;
     max-width: 100%;
     color: var(--color-primary-light);
-    font-family: 'Futura PT', sans-serif;
+    /*  font-family: 'Futura PT', sans-serif; */
     font-size: 16px;
     background-color: var(--color-primary-dark);
     line-height: 1.5;
     text-decoration: none;
+    border: 0;
     border-radius: 8px;
-    border-width: 0;
-    transition: background-color 0.3s;
+    /* border-width: 0; */
+    /* transition: background-color 0.3s; */
     cursor: pointer;
     transition: opacity 500ms ease;
 
