@@ -1,5 +1,5 @@
 .checkbox {
-  margin-top: 16px;
+  /* margin-top: 16px; */
   font-size: 13px;
   font-weight: 400;
   line-height: 1.7;
@@ -21,6 +21,7 @@
 
     &--left-sided {
       margin: 0;
+      max-width: calc(100% - 26px);
     }
 
     &::before {

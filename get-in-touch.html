@@ -252,21 +252,20 @@
       <section class="get-in-touch-section">
         <div class="get-in-touch-section__container">
           <div class="get-in-touch-section__info-part">
-            <a class="get-in-touch-section__logo" href="/">
+            <a style="max-width: 300px" href="/">
               <img
-                class="get-in-touch-section__logo--size"
+                class="get-in-touch-section__logo"
                 src="./images/logo.png"
                 alt="Logo 'Canada Phoenix'"
               />
             </a>
-            <p class="get-in-touch-section__info">Address Exapmle</p>
+            <p>Address Exapmle</p>
+            <p>Phone number Exapmle</p>
           </div>
 
           <iframe
+            class="get-in-touch-section__map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10160.512221593612!2d30.48970704760742!3d50.457340059028176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1721388920505!5m2!1sru!2sua"
-            width="100%"
-            height="350"
-            style="border: 0; border-radius: 15px"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -285,6 +284,22 @@
             <div class="input input--unlimited">
               <label
                 class="input__label visually-hidden"
+                for="user-name-contact"
+              >
+                Name
+              </label>
+              <input
+                class="input__control input__control--autocompleted"
+                type="name"
+                name="user-name-contact"
+                id="user-name-contact"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="input input--unlimited">
+              <label
+                class="input__label visually-hidden"
                 for="user-email-contact"
               >
                 Email
@@ -298,9 +313,29 @@
               />
             </div>
 
+            <div class="input input--unlimited">
+              <label
+                class="input__label visually-hidden"
+                for="user-tel-contact"
+              >
+                Tel
+              </label>
+              <input
+                class="input__control input__control--autocompleted"
+                type="tel"
+                name="user-tel-contact"
+                id="user-tel-contact"
+                placeholder="Tel"
+              />
+            </div>
+
             <div
               class="input__button-container input__button-container--unlimited"
             >
+              <p style="margin: 8px 0">
+                Please tick the boxes below to tell us how you would prefer to
+                hear from us:
+              </p>
               <div class="checkbox">
                 <input
                   class="checkbox__input visually-hidden"
@@ -313,10 +348,40 @@
                   for="terms-conditions-contact"
                   id="terms-conditions-label-contact"
                 >
-                  Please tick to agree that you have read our Privacy Policy,
-                  and that you agree to receive emails from Global
-                  Infrastructure Group. Your email will not be used for any
-                  other purpose.
+                  Yes I would like to receive communications by email
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <input
+                  class="checkbox__input visually-hidden"
+                  type="checkbox"
+                  id="terms-conditions-contact"
+                  name="terms-conditions-contact"
+                />
+                <label
+                  class="checkbox__label checkbox__label--left-sided"
+                  for="terms-conditions-contact"
+                  id="terms-conditions-label-contact"
+                >
+                  Yes I would like to receive communications by telephone
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <input
+                  class="checkbox__input visually-hidden"
+                  type="checkbox"
+                  id="terms-conditions-contact"
+                  name="terms-conditions-contact"
+                />
+                <label
+                  class="checkbox__label checkbox__label--left-sided"
+                  for="terms-conditions-contact"
+                  id="terms-conditions-label-contact"
+                >
+                  Before you proceed please tick to state you have read and
+                  agreed to our <span>Privacy & Cookie Policy</span>
                 </label>
               </div>
 
