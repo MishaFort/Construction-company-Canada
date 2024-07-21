@@ -62,7 +62,9 @@
     color: var(--color-header);
     background: linear-gradient(to bottom, #fffafa, #fff);
     font-size: 18px;
+    /* border: 0; */
     text-decoration: none;
+    cursor: pointer;
 
     @media screen and (min-width: $bp-desktop) {
       width: auto;
@@ -74,9 +76,9 @@
     }
   }
 
-  .header__link:hover .link {
+  .header__link:hover .link__underline {
     text-decoration: underline;
-    opacity: 0.8;
+    /*   opacity: 0.8; */
   }
 
   &__container {

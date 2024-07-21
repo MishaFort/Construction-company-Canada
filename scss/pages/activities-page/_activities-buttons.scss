@@ -1,8 +1,12 @@
 .activities-buttons {
   display: none;
-  padding: 15px 0;
+  padding: 15px 20px;
 
   @media screen and (min-width: $bp-tablet) {
+    padding: 15px 24px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
     padding: 15px 70px;
   }
 }

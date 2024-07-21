@@ -17,7 +17,11 @@ menuBtnOpen.addEventListener('click', toggleMenu);
 menuBtnClose.addEventListener('click', toggleMenu);
 
 mobileMenuLinks.forEach(link => {
-  link.addEventListener('click', toggleMenu);
+  link.addEventListener('click', e => {
+    if (link !== activitiesLink && !isFirstClick) {
+      toggleMenu();
+    }
+  });
 });
 
 const activitiesLink = document.querySelector('.link--first-click');
