@@ -1,11 +1,24 @@
 .checkbox {
+  display: flex;
   /* margin-top: 16px; */
-  font-size: 13px;
+  /* font-size: 13px;
   font-weight: 400;
   line-height: 1.7;
-  color: var(--color-brand-normal);
+  color: var(--color-brand-normal); */
 
   &__input {
+    align-items: flex-start;
+    border: solid 1px #707271;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding: 5px;
+    /* width: 100%; */
+    background-color: #fff;
+    color: #707271;
+    font-size: 18px;
+  }
+
+  /*   &__input {
     appearance: none;
   }
 
@@ -50,5 +63,5 @@
     color: var(--color-primary-dark);
     padding-left: 0.5px;
     line-height: 0.9;
-  }
+  } */
 }

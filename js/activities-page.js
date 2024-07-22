@@ -42,13 +42,15 @@ headerSubLinks.forEach(link => {
       if (correspondingButton) {
         // Remove previous underline style and button__active class
         activitiesSublinkButtons.forEach(button => {
-          button.classList.remove('button__active');
+          /* button.classList.remove('button__active'); */
           button.style.textDecoration = 'none';
+          button.style.opacity = '1';
         });
 
         // Add underline style to the corresponding button
-        correspondingButton.classList.add('button__active');
+        /* correspondingButton.classList.add('button__active'); */
         correspondingButton.style.textDecoration = 'underline';
+        correspondingButton.style.opacity = '0.6';
       }
     }
   });
@@ -78,13 +80,15 @@ buttons.forEach(button => {
 
     // Remove active class and underline from all buttons
     buttons.forEach(button => {
-      button.classList.remove('button__active');
+      /* button.classList.remove('button__active'); */
       button.style.textDecoration = 'none';
+      button.style.opacity = '1';
     });
 
     // Add active class and underline to the clicked button
-    event.currentTarget.classList.add('button__active');
+    /* event.currentTarget.classList.add('button__active'); */
     event.currentTarget.style.textDecoration = 'underline';
+    event.currentTarget.style.opacity = '0.6';
 
     // Hide all sections except the hero section and the target section
     sections.forEach(section => {
@@ -135,8 +139,9 @@ activitiesListLinks.forEach(link => {
 
     if (correspondingButton) {
       // Add underline style to the corresponding button
-      correspondingButton.classList.add('button__active');
+      /* correspondingButton.classList.add('button__active'); */
       correspondingButton.style.textDecoration = 'underline';
+      correspondingButton.style.opacity = '1';
     }
   });
 });
@@ -166,9 +171,7 @@ function handleHashChange() {
         .replace(/-/g, ' ')
         .trim();
       const correspondingButton = Array.from(
-        document.querySelectorAll(
-          '.activities-list__link, .activities-buttons button'
-        )
+        document.querySelectorAll('.activities-buttons .button')
       ).find(button =>
         button.textContent
           .trim()
@@ -178,18 +181,20 @@ function handleHashChange() {
       );
       if (correspondingButton) {
         // Remove active class from all buttons
-        buttons.forEach(button => button.classList.remove('button__active'));
+        /* buttons.forEach(button => button.classList.remove('button__active')); */
         // Add active class to the corresponding button
-        correspondingButton.classList.add('button__active');
+        /*  correspondingButton.classList.add('button__active'); */
         // Add underline to the corresponding button
         correspondingButton.style.textDecoration = 'underline';
+        correspondingButton.style.opacity = '0.6';
       }
     }
   } else {
     // If no hash is present, remove active class and underline from all buttons
     buttons.forEach(button => {
-      button.classList.remove('button__active');
+      /* button.classList.remove('button__active'); */
       button.style.textDecoration = 'none';
+      button.style.opacity = '1';
     });
   }
 }
@@ -202,49 +207,6 @@ window.addEventListener('load', handleHashChange);
 window.addEventListener('hashchange', handleHashChange);
 
 ///////////////////////////
-/* 
-// Get all buttons with class "button" in the activities-buttons section
-const activityPreloadButtons = document.querySelectorAll(
-  '.activities-buttons .button'
-);
-
-// Function to add underline style to the corresponding button
-function addUnderlineToButton(hash) {
-  const buttonText = hash.replace('activities-', '').replace(/-/g, ' ').trim();
-  const correspondingButton = Array.from(activityPreloadButtons).find(button =>
-    button.textContent
-      .trim()
-      .toLowerCase()
-      .replace(/-/g, ' ')
-      .includes(buttonText)
-  );
-  if (correspondingButton) {
-    // Remove active class and underline from all buttons
-    activityPreloadButtons.forEach(button => {
-      button.classList.remove('button__active');
-      button.style.textDecoration = 'none';
-    });
-    // Add active class and underline to the corresponding button
-    correspondingButton.classList.add('button__active');
-    correspondingButton.style.textDecoration = 'underline';
-  }
-}
-
-// Call the function on page load and hash change
-window.addEventListener('load', () => {
-  const hash = window.location.hash;
-  if (hash) {
-    addUnderlineToButton(hash);
-  }
-});
-
-window.addEventListener('hashchange', () => {
-  const hash = window.location.hash;
-  if (hash) {
-    addUnderlineToButton(hash);
-  }
-});
- */
 
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuBtnOpen = document.querySelector('.menu-btn-open');
