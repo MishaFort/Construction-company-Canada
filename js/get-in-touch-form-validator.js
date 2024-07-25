@@ -45,16 +45,6 @@ validatorGetInTouch.addField('#contact-information', [
       return false;
     },
     errorMessage: '&#8613; You should fill at least one contact information',
-    onFail: () => {
-      // Show error message
-      document.querySelector('#contact-information-error').style.display =
-        'block';
-    },
-    onSuccess: () => {
-      // Hide error message
-      document.querySelector('#contact-information-error').style.display =
-        'none';
-    },
   },
 ]);
 
