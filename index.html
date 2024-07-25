@@ -91,7 +91,9 @@
               </ul>
             </li>
             <li class="header__link">
-              <a class="link" href="/get-in-touch.html">Get in touch</a>
+              <a class="link" href="/get-in-touch.html#get-in-touch-section">
+                Get in touch
+              </a>
             </li>
           </ul>
         </nav>
@@ -192,7 +194,9 @@
                 </ul>
               </li>
               <li class="header__link">
-                <a class="link" href="/get-in-touch.html">Get in touch</a>
+                <a class="link" href="/get-in-touch.html#get-in-touch-section">
+                  Get in touch
+                </a>
               </li>
             </ul>
           </div>
@@ -204,15 +208,15 @@
     <main>
       <!--                   Section 1                       -->
       <section class="hero-section">
-        <a class="hero-section__logo" href="/">
+        <!-- <a class="hero-section__logo" href="/">
           <img
             class="hero-section__logo--size"
             src="./images/logo.png"
             alt="Logo 'Canada Phoenix'"
           />
-        </a>
+        </a> -->
 
-        <div class="overlay"></div>
+        <!--  <div class="overlay"></div> -->
 
         <div class="hero-section__slider">
           <button
@@ -220,7 +224,7 @@
             type="button"
           >
             <img
-              style="width: 30px; height: 44px"
+              class="hero-section__button--sized"
               src="./images/slider-arrow.png"
             />
           </button>
@@ -229,8 +233,8 @@
               <li class="swiper-slide">
                 <img
                   class="hero-section__image"
-                  src="./images/8-1.jpg"
-                  alt="8-1"
+                  src="./images/1-7.jpg"
+                  alt="1-7"
                 />
                 <img
                   class="hero-section__gradient"
@@ -240,10 +244,8 @@
                 <div class="hero-section__text-part">
                   <h1 class="hero-section__title">What we do</h1>
                   <p class="hero-section__text">
-                    We have expansive experience within civil and structural,
-                    telecoms, signalling, mechanical and electrical engineering
-                    and offer both standalone services and a fully integrated
-                    solution to our clients.
+                    At Phoenix Rail Engineering Services, we aim to offer a
+                    fully comprehensive engineering & management support
                   </p>
                 </div>
               </li>
@@ -260,11 +262,12 @@
                 <div class="hero-section__text-part">
                   <h1 class="hero-section__title">About Us</h1>
                   <p class="hero-section__text">
-                    The Global Infrastructure Group of companies consists of UK
-                    based Global Rail Construction Ltd, Irish based Global Rail
-                    Services Ltd, Australian based Global Rail Australia Pty Ltd
-                    and GRA Networks, a subsidiary operating in both Ireland and
-                    Australia.
+                    Phoenix Rail aims to is to become a dynamic player in the
+                    rail industry. Offering a wide range of support services
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde, dolorum.
                   </p>
                 </div>
               </li>
@@ -275,7 +278,7 @@
             type="button"
           >
             <img
-              style="width: 30px; height: 44px"
+              class="hero-section__button--sized"
               src="./images/slider-arrow.png"
             />
           </button>
@@ -346,22 +349,24 @@
 
                   <div class="input__button-container">
                     <div class="checkbox">
-                      <input
-                        class="checkbox__input visually-hidden"
-                        type="checkbox"
-                        id="terms-conditions"
-                        name="terms-conditions"
-                      />
-                      <label
-                        class="checkbox__label"
-                        for="terms-conditions"
-                        id="terms-conditions-label"
-                      >
-                        Please tick to agree that you have read our Privacy
-                        Policy, and that you agree to receive emails from Global
-                        Infrastructure Group. Your email will not be used for
-                        any other purpose.
-                      </label>
+                      <div class="checkbox__container">
+                        <input
+                          class="checkbox__input checkbox__footer"
+                          type="checkbox"
+                          id="terms-conditions"
+                          name="terms-conditions"
+                        />
+                        <label
+                          class="checkbox__label"
+                          for="terms-conditions"
+                          id="terms-conditions-label"
+                        >
+                          Please tick to agree that you have read our Privacy
+                          Policy, and that you agree to receive emails from
+                          Global Infrastructure Group. Your email will not be
+                          used for any other purpose.
+                        </label>
+                      </div>
                     </div>
 
                     <button class="button__contact" type="submit">
@@ -384,9 +389,6 @@
 
     <script src="./js/copyright-year.js"></script>
 
-    <!--  <script src="./js/mobile-menu.js"></script>
-    <script src="./js/smooth-scroll.js"></script> -->
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/hero-slider.js"></script>
 
@@ -394,6 +396,7 @@
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="./js/footer-form-validator.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/smooth-scroll.js"></script>
+
+    <!-- <script src="./js/dynamic-overlay.js"></script> -->
   </body>
 </html>

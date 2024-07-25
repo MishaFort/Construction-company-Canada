@@ -13,13 +13,9 @@ validator
     }
   )
 
-  .addField(
-    '#terms-conditions',
-    [{ rule: 'required', errorMessage: '&#8613; The field is required' }],
-    {
-      errorMessage: '&#8613; Invalid field',
-    }
-  )
+  .addField('#terms-conditions', [
+    { rule: 'required', errorMessage: '&#8613; The field is required' },
+  ])
 
   .onSuccess(event => {
     location.reload();

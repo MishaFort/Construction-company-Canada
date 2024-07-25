@@ -63,3 +63,7 @@ document.addEventListener('click', e => {
     isFirstClick = true;
   }
 });
+
+document.querySelectorAll('.js-mobile-menu-link-close').forEach(link => {
+  link.addEventListener('click', toggleMenu);
+});

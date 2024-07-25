@@ -5,6 +5,10 @@
     padding: 0 56px 40px;
   }
 
+  &__container {
+    display: none;
+  }
+
   &__content-container {
     display: flex;
     flex-direction: column;

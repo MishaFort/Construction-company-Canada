@@ -91,7 +91,9 @@
               </ul>
             </li>
             <li class="header__link">
-              <a class="link link--active" href="">Get in touch</a>
+              <a class="link link--active" href="#get-in-touch-section">
+                Get in touch
+              </a>
             </li>
           </ul>
         </nav>
@@ -192,7 +194,12 @@
                 </ul>
               </li>
               <li class="header__link">
-                <a class="link link--active" href="">Get in touch</a>
+                <a
+                  class="link link--active js-mobile-menu-link-close"
+                  href="#get-in-touch-section"
+                >
+                  Get in touch
+                </a>
               </li>
             </ul>
           </div>
@@ -219,7 +226,7 @@
             type="button"
           >
             <img
-              style="width: 30px; height: 44px"
+              class="hero-section__button--sized"
               src="./images/slider-arrow.png"
             />
           </button>
@@ -274,18 +281,18 @@
             type="button"
           >
             <img
-              style="width: 30px; height: 44px"
+              class="hero-section__button--sized"
               src="./images/slider-arrow.png"
             />
           </button>
         </div>
       </section>
-      <section class="get-in-touch-section">
+      <section class="get-in-touch-section" id="get-in-touch-section">
         <div class="get-in-touch-section__container">
           <div class="get-in-touch-section__info-part">
-            <a style="max-width: 300px" href="/">
+            <a class="get-in-touch-section__logo" href="/">
               <img
-                class="get-in-touch-section__logo"
+                class="get-in-touch-section__logo--sized"
                 src="./images/logo.png"
                 alt="Logo 'Canada Phoenix'"
               />
@@ -312,108 +319,120 @@
             autocomplete="on"
             id="get-in-touch-section-form"
           >
-            <div class="input input--unlimited">
-              <label
-                class="input__label visually-hidden"
-                for="user-name-contact"
-              >
-                Name
-              </label>
-              <input
-                class="input__control input__control--autocompleted"
-                type="name"
-                name="user-name-contact"
-                id="user-name-contact"
-                placeholder="Name"
-              />
-            </div>
+            <div class="get-in-touch-section__contact-info-container">
+              <div class="input input--unlimited">
+                <label
+                  class="input__label visually-hidden"
+                  for="user-name-contact"
+                >
+                  Name
+                </label>
+                <input
+                  class="input__control input__control--autocompleted"
+                  type="name"
+                  name="user-name-contact"
+                  id="user-name-contact"
+                  placeholder="Name"
+                />
+              </div>
 
-            <div class="input input--unlimited">
-              <label
-                class="input__label visually-hidden"
-                for="user-email-contact"
-              >
-                Email
-              </label>
-              <input
-                class="input__control input__control--autocompleted"
-                type="email"
-                name="user-email-contact"
-                id="user-email-contact"
-                placeholder="Email"
-              />
-            </div>
+              <div id="input-contact-option-group">
+                <div class="input input--unlimited">
+                  <label
+                    class="input__label visually-hidden"
+                    for="user-email-contact"
+                  >
+                    Email
+                  </label>
+                  <input
+                    class="input__control input__control--autocompleted"
+                    type="email"
+                    name="user-email-contact"
+                    id="user-email-contact"
+                    placeholder="Email"
+                  />
+                </div>
 
-            <div class="input input--unlimited">
-              <label
-                class="input__label visually-hidden"
-                for="user-tel-contact"
-              >
-                Tel
-              </label>
-              <input
-                class="input__control input__control--autocompleted"
-                type="tel"
-                name="user-tel-contact"
-                id="user-tel-contact"
-                placeholder="Tel"
-              />
+                <div class="input input--unlimited">
+                  <label
+                    class="input__label visually-hidden"
+                    for="user-tel-contact"
+                  >
+                    Tel
+                  </label>
+                  <input
+                    class="input__control input__control--autocompleted input__control--margin-top"
+                    type="tel"
+                    name="user-tel-contact"
+                    id="user-tel-contact"
+                    placeholder="Tel"
+                  />
+                </div>
+              </div>
             </div>
 
             <div
               class="input__button-container input__button-container--unlimited"
             >
-              <p style="margin: 8px 0">
+              <p class="get-in-touch-section__form-preferences">
                 Please tick the boxes below to tell us how you would prefer to
                 hear from us:
               </p>
-              <div class="checkbox">
-                <input
-                  class="checkbox__input"
-                  type="checkbox"
-                  id="terms-conditions-contact"
-                  name="terms-conditions-contact"
-                />
-                <label
-                  class="checkbox__label checkbox__label--left-sided"
-                  for="terms-conditions-contact"
-                  id="terms-conditions-label-contact"
-                >
-                  Yes I would like to receive communications by email
-                </label>
+              <div class="checkbox__radio-group" id="checkbox__radio-group">
+                <div class="checkbox">
+                  <div class="checkbox__container">
+                    <input
+                      class="checkbox__input"
+                      type="checkbox"
+                      id="email-contact"
+                      name="email-contact"
+                    />
+                    <label
+                      class="checkbox__label--contact"
+                      for="email-contact"
+                      id="email-label-contact"
+                    >
+                      Yes I would like to receive communications by email
+                    </label>
+                  </div>
+                </div>
+
+                <div class="checkbox">
+                  <div class="checkbox__container">
+                    <input
+                      class="checkbox__input"
+                      type="checkbox"
+                      id="telephone-contact"
+                      name="telephone-contact"
+                    />
+                    <label
+                      class="checkbox__label--contact"
+                      for="telephone-contact"
+                      id="telephone-label-contact"
+                    >
+                      Yes I would like to receive communications by telephone
+                    </label>
+                  </div>
+                </div>
               </div>
 
               <div class="checkbox">
-                <input
-                  class="checkbox__input visually-hidden"
-                  type="checkbox"
-                  id="terms-conditions-contact"
-                  name="terms-conditions-contact"
-                />
-                <label
-                  class="checkbox__label checkbox__label--left-sided"
-                  for="terms-conditions-contact"
-                  id="terms-conditions-label-contact"
-                >
-                  Yes I would like to receive communications by telephone
-                </label>
-              </div>
-
-              <div class="checkbox">
-                <input
-                  class="checkbox__input visually-hidden"
-                  type="checkbox"
-                  id="terms-conditions-contact"
-                  name="terms-conditions-contact"
-                />
-                <label
-                  class="checkbox__label checkbox__label--left-sided"
-                  for="terms-conditions-contact"
-                  id="terms-conditions-label-contact"
-                >
-                  Before you proceed please tick to state you have read and
-                  agreed to our <span>Privacy & Cookie Policy</span>
-                </label>
+                <div class="checkbox__container">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    id="terms-conditions-contact"
+                    name="terms-conditions-contact"
+                  />
+                  <label
+                    class="checkbox__label--contact"
+                    for="terms-conditions-contact"
+                    id="terms-conditions-label-contact"
+                  >
+                    Before you proceed please tick to state you have read and
+                    agreed to our <span>Privacy & Cookie Policy</span>
+                  </label>
+                </div>
               </div>
 
               <button class="button__contact" type="submit">Subscribe</button>
@@ -425,53 +444,50 @@
     <!--                       Footer                        -->
     <footer>
       <section class="footer">
-        <div class="container">
-          <div class="footer__container">
-            <nav class="footer__logo">
-              <a href="#">
-                <img
-                  class="footer__logo--size"
-                  src="./images/logo.png"
-                  alt="Logo 'Canada Phoenix'"
-                />
-              </a>
-            </nav>
-            <nav class="footer__links">
-              <p class="footer__links-title">Follow Us</p>
-              <a href="#" target="_blank">
-                <svg class="footer__address-icon" width="72" height="72">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-              <a class="footer__address-link" href="#"> example@example.com </a>
-            </nav>
-            <div class="footer__newsletter">
-              <h2 class="footer__newsletter-title">Newsletter</h2>
-              <p class="footer__newsletter-text">
-                View our latest newsletter here or subscribe below
-              </p>
-              <div class="footer__form">
-                <form name="footer-form" autocomplete="on" id="footer-form">
-                  <div class="input">
-                    <label
-                      class="input__label visually-hidden"
-                      for="user-email"
-                    >
-                      Email
-                    </label>
-                    <input
-                      class="input__control"
-                      type="email"
-                      name="user-email"
-                      id="user-email"
-                      placeholder="Email"
-                    />
-                  </div>
+        <div class="footer__container">
+          <nav class="footer__logo">
+            <a href="#">
+              <img
+                class="footer__logo--size"
+                src="./images/logo.png"
+                alt="Logo 'Canada Phoenix'"
+              />
+            </a>
+          </nav>
+          <nav class="footer__links">
+            <p class="footer__links-title">Follow Us</p>
+            <a href="#" target="_blank">
+              <svg class="footer__address-icon" width="72" height="72">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a class="footer__address-link" href="#"> example@example.com </a>
+          </nav>
+          <div class="footer__newsletter">
+            <h2 class="footer__newsletter-title">Newsletter</h2>
+            <p class="footer__newsletter-text">
+              View our latest newsletter here or subscribe below
+            </p>
+            <div class="footer__form">
+              <form name="footer-form" autocomplete="on" id="footer-form">
+                <div class="input">
+                  <label class="input__label visually-hidden" for="user-email">
+                    Email
+                  </label>
+                  <input
+                    class="input__control"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Email"
+                  />
+                </div>
 
-                  <div class="input__button-container">
-                    <div class="checkbox">
+                <div class="input__button-container">
+                  <div class="checkbox">
+                    <div class="checkbox__container">
                       <input
-                        class="checkbox__input visually-hidden"
+                        class="checkbox__input checkbox__footer"
                         type="checkbox"
                         id="terms-conditions"
                         name="terms-conditions"
@@ -487,13 +503,13 @@
                         any other purpose.
                       </label>
                     </div>
-
-                    <button class="button__contact" type="submit">
-                      Subscribe
-                    </button>
                   </div>
-                </form>
-              </div>
+
+                  <button class="button__contact" type="submit">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -507,10 +523,6 @@
     </footer>
 
     <script src="./js/copyright-year.js"></script>
-
-    <!--  <script src="./js/mobile-menu.js"></script>
-    <script src="./js/smooth-scroll.js"></script> -->
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/hero-slider.js"></script>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>

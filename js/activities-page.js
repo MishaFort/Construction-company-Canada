@@ -14,41 +14,30 @@ headerSubLinks.forEach(link => {
     const targetDiv = document.getElementById(targetId);
 
     if (targetDiv) {
-      // Hide all activities divs
       activitiesDivs.forEach(div => (div.style.display = 'none'));
 
-      // Show the target div
       targetDiv.style.display = 'block';
       window.location.hash = `#${targetDiv.id}`;
 
-      // Scroll to the top of the page
       window.scrollTo(0, 0);
 
-      // Hide the activities list section
       document.querySelector('.activities-list').style.display = 'none';
 
-      // Show the activities buttons section
       document.querySelector('.activities-buttons').style.display = 'block';
 
-      // Find the corresponding button in the activities-buttons section
       const correspondingButton = [...activitiesSublinkButtons].find(button =>
         button.textContent
           .trim()
           .toLowerCase()
-          /* .replace(/-/g, ' ') */
           .includes(link.textContent.trim().toLowerCase())
       );
 
       if (correspondingButton) {
-        // Remove previous underline style and button__active class
         activitiesSublinkButtons.forEach(button => {
-          /* button.classList.remove('button__active'); */
           button.style.textDecoration = 'none';
           button.style.opacity = '1';
         });
 
-        // Add underline style to the corresponding button
-        /* correspondingButton.classList.add('button__active'); */
         correspondingButton.style.textDecoration = 'underline';
         correspondingButton.style.opacity = '0.6';
       }
@@ -56,11 +45,8 @@ headerSubLinks.forEach(link => {
   });
 });
 
-/////////////////////////////
+//////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////
-
-// Get all the sections and buttons
 const sections = document.querySelectorAll(
   '.activities-list, [id^="activities-"]'
 );
@@ -78,19 +64,14 @@ buttons.forEach(button => {
       .replace(/\s+/g, '-');
     const sectionToShow = document.getElementById(`activities-${buttonText}`);
 
-    // Remove active class and underline from all buttons
     buttons.forEach(button => {
-      /* button.classList.remove('button__active'); */
       button.style.textDecoration = 'none';
       button.style.opacity = '1';
     });
 
-    // Add active class and underline to the clicked button
-    /* event.currentTarget.classList.add('button__active'); */
     event.currentTarget.style.textDecoration = 'underline';
     event.currentTarget.style.opacity = '0.6';
 
-    // Hide all sections except the hero section and the target section
     sections.forEach(section => {
       if (
         section !== sectionToShow &&
@@ -101,22 +82,16 @@ buttons.forEach(button => {
       }
     });
 
-    // Show the target section
     if (sectionToShow) {
       sectionToShow.style.display = 'block';
       window.location.hash = `#${sectionToShow.id}`;
     }
 
-    // Show the activities buttons section
     activitiesButtons.style.display = 'block';
   });
 });
 
-///////////////////////////
-
-/* const activitiesMainListButtons = Array.from(
-  document.querySelectorAll('.activities-buttons')
-); */
+//////////////////////////////////////////////////////////////////////////
 
 const activitiesListLinks = document.querySelectorAll('.activities-list__link');
 
@@ -138,15 +113,13 @@ activitiesListLinks.forEach(link => {
     });
 
     if (correspondingButton) {
-      // Add underline style to the corresponding button
-      /* correspondingButton.classList.add('button__active'); */
       correspondingButton.style.textDecoration = 'underline';
       correspondingButton.style.opacity = '1';
     }
   });
 });
 
-///////////////////////////
+////////////////////////////////////////////////////////////////////////////
 
 function handleHashChange() {
   const hash = window.location.hash;
@@ -165,7 +138,6 @@ function handleHashChange() {
       sectionToShow.style.display = 'block';
       activitiesButtons.style.display = 'block';
 
-      // Find the corresponding button and add the active class
       const buttonText = sectionToShow.id
         .replace('activities-', '')
         .replace(/-/g, ' ')
@@ -180,33 +152,22 @@ function handleHashChange() {
           .includes(buttonText)
       );
       if (correspondingButton) {
-        // Remove active class from all buttons
-        /* buttons.forEach(button => button.classList.remove('button__active')); */
-        // Add active class to the corresponding button
-        /*  correspondingButton.classList.add('button__active'); */
-        // Add underline to the corresponding button
         correspondingButton.style.textDecoration = 'underline';
         correspondingButton.style.opacity = '0.6';
       }
     }
   } else {
-    // If no hash is present, remove active class and underline from all buttons
     buttons.forEach(button => {
-      /* button.classList.remove('button__active'); */
       button.style.textDecoration = 'none';
       button.style.opacity = '1';
     });
   }
 }
 
-///////////////////////////
-
-///////////////////////////
-
 window.addEventListener('load', handleHashChange);
 window.addEventListener('hashchange', handleHashChange);
 
-///////////////////////////
+////////////////////////////////////////////////////////////////////////////
 
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuBtnOpen = document.querySelector('.menu-btn-open');

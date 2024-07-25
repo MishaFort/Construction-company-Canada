@@ -30,12 +30,10 @@
               <a class="link link--borderless" href="/">Home</a>
             </li>
             <li class="header__link">
-              <a class="link link--active" href="">Activities</a>
+              <a class="link link--active" href=""> Activities </a>
               <ul class="header__sub-list">
                 <li>
-                  <a class="header__sub-link smooth-scroll">
-                    Railway Construction
-                  </a>
+                  <a class="header__sub-link"> Railway Construction </a>
                 </li>
                 <li>
                   <a class="header__sub-link"> Civil Engineering </a>
@@ -58,7 +56,9 @@
               </ul>
             </li>
             <li class="header__link">
-              <a class="link" href="/get-in-touch.html">Get in touch</a>
+              <a class="link" href="/get-in-touch.html#get-in-touch-section">
+                Get in touch
+              </a>
             </li>
           </ul>
         </nav>
@@ -156,7 +156,9 @@
                 </ul>
               </li>
               <li class="header__link">
-                <a class="link" href="/get-in-touch.html">Get in touch</a>
+                <a class="link" href="/get-in-touch.html#get-in-touch-section">
+                  Get in touch
+                </a>
               </li>
             </ul>
           </div>
@@ -184,7 +186,7 @@
             type="button"
           >
             <img
-              style="width: 30px; height: 44px"
+              class="hero-section__button--sized"
               src="./images/slider-arrow.png"
             />
           </button>
@@ -239,14 +241,14 @@
             type="button"
           >
             <img
-              style="width: 30px; height: 44px"
+              class="hero-section__button--sized"
               src="./images/slider-arrow.png"
             />
           </button>
         </div>
       </section>
       <!--                  Main section                       -->
-      <section class="activities-list">
+      <section class="activities-list" id="activities-list">
         <!--  <div class="container"> -->
         <div class="activities-list__container">
           <div class="activities-list__text-part">
@@ -393,7 +395,10 @@
       <!--                   Section 1                     -->
       <section class="activities-section">
         <div class="container">
-          <div style="display: none" id="activities-railway-construction">
+          <div
+            class="activities-section__container"
+            id="activities-railway-construction"
+          >
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
@@ -445,7 +450,10 @@
             </div>
           </div>
 
-          <div style="display: none" id="activities-civil-engineering">
+          <div
+            class="activities-section__container"
+            id="activities-civil-engineering"
+          >
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
@@ -500,7 +508,7 @@
             </div>
           </div>
 
-          <div style="display: none" id="activities-telecoms">
+          <div class="activities-section__container" id="activities-telecoms">
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
@@ -562,7 +570,10 @@
             </div>
           </div>
 
-          <div style="display: none" id="activities-multi-utilities">
+          <div
+            class="activities-section__container"
+            id="activities-multi-utilities"
+          >
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
@@ -617,7 +628,10 @@
             </div>
           </div>
 
-          <div style="display: none" id="activities-power-networks">
+          <div
+            class="activities-section__container"
+            id="activities-power-networks"
+          >
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
@@ -662,7 +676,10 @@
             </div>
           </div>
 
-          <div style="display: none" id="activities-general-construction">
+          <div
+            class="activities-section__container"
+            id="activities-general-construction"
+          >
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
@@ -706,7 +723,10 @@
             </div>
           </div>
 
-          <div style="display: none" id="activities-design-consultancy">
+          <div
+            class="activities-section__container"
+            id="activities-design-consultancy"
+          >
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
@@ -798,25 +818,27 @@
 
                   <div class="input__button-container">
                     <div class="checkbox">
-                      <input
-                        class="checkbox__input visually-hidden"
-                        type="checkbox"
-                        id="terms-conditions"
-                        name="terms-conditions"
-                      />
-                      <label
-                        class="checkbox__label"
-                        for="terms-conditions"
-                        id="terms-conditions-label"
-                      >
-                        Please tick to agree that you have read our Privacy
-                        Policy, and that you agree to receive emails from Global
-                        Infrastructure Group. Your email will not be used for
-                        any other purpose.
-                      </label>
+                      <div class="checkbox__container">
+                        <input
+                          class="checkbox__input checkbox__footer"
+                          type="checkbox"
+                          id="terms-conditions"
+                          name="terms-conditions"
+                        />
+                        <label
+                          class="checkbox__label"
+                          for="terms-conditions"
+                          id="terms-conditions-label"
+                        >
+                          Please tick to agree that you have read our Privacy
+                          Policy, and that you agree to receive emails from
+                          Global Infrastructure Group. Your email will not be
+                          used for any other purpose.
+                        </label>
+                      </div>
                     </div>
 
-                    <button class="button button__contact" type="submit">
+                    <button class="button__contact" type="submit">
                       Subscribe
                     </button>
                   </div>
@@ -836,9 +858,6 @@
 
     <script src="./js/copyright-year.js"></script>
 
-    <!--  <script src="./js/mobile-menu.js"></script>
-    <script src="./js/smooth-scroll.js"></script> -->
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/hero-slider.js"></script>
 
@@ -847,7 +866,5 @@
     <!--   <script src="./js/sections.js"></script> -->
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="./js/footer-form-validator.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
-    <script src="./js/smooth-scroll.js"></script>
   </body>
 </html>

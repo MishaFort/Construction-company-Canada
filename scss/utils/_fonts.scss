@@ -10,26 +10,30 @@
   font-display: swap;
   font-family: 'Futura PT';
   font-weight: 400;
-  src: url('../fonts/futura-pt-400.woff2') format('woff2');
+  src: url('../fonts/futura-pt-400.woff2') format('woff2'),
+    url('/fonts/futura-pt-400.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
   font-family: 'Futura PT';
   font-weight: 500;
-  src: url('../fonts/futura-pt-500.woff2') format('woff2');
+  src: url('../fonts/futura-pt-500.woff2') format('woff2'),
+    url('/fonts/futura-pt-500.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
   font-family: 'Futura PT';
   font-weight: 600;
-  src: url('../fonts/futura-pt-600.woff2') format('woff2');
+  src: url('../fonts/futura-pt-600.woff2') format('woff2'),
+    url('/fonts/futura-pt-600.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
   font-family: 'Futura PT';
   font-weight: 700;
-  src: url('../fonts/futura-pt-700.woff2') format('woff2');
+  src: url('../fonts/futura-pt-700.woff2') format('woff2'),
+    url('/fonts/futura-pt-700.woff') format('woff');
 }
