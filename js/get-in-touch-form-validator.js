@@ -120,3 +120,43 @@ validatorGetInTouch
   .addField('#telephone-contact', [
     { rule: 'required', errorMessage: '&#8613; The field is required' },
   ]) */
+
+/* validatorGetInTouch.addField('#contact-information', [
+  {
+    validator: (value, fields) => {
+      const emailValue = fields['#user-email-contact'].elem.value;
+      const telValue = fields['#user-tel-contact'].elem.value;
+
+      if (emailValue || telValue) {
+        return true;
+      }
+
+      return false;
+    },
+    errorMessage: '&#8613; You should fill at least one contact information',
+    onFail: () => {
+      // Show error message
+      document.querySelector('#contact-information-error').style.display = 'block';
+    },
+    onSuccess: () => {
+      // Hide error message
+      document.querySelector('#contact-information-error').style.display = 'none';
+    },
+  },
+]);
+
+// Add event listeners to the email and tel fields
+document.querySelector('#user-email-contact').addEventListener('input', () => {
+  validatorGetInTouch.revalidateField('#contact-information');
+});
+
+document.querySelector('#user-tel-contact').addEventListener('input', () => {
+  validatorGetInTouch.revalidateField('#contact-information');
+}); 
+
+
+Note that you'll need to add an error element with the ID contact-information-error to your HTML code, like this:
+
+<div id="contact-information-error" style="display: none;">
+  &#8613; You should fill at least one contact information
+</div>*/

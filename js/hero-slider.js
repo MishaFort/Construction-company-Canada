@@ -40,6 +40,21 @@ const swiper = new Swiper('.swiper-container', {
   },
 
   /*   effect: 'flip', */
+  on: {
+    slideChange: function () {
+      const currentSlide = this.slides[this.activeIndex];
+      const textPartElement = currentSlide.querySelector(
+        '.hero-section__text-part'
+      );
+      const overlayElement = document.querySelector('.overlay');
+
+      const textPartWidth = textPartElement.offsetWidth;
+      const textPartHeight = textPartElement.offsetHeight;
+
+      overlayElement.style.width = `${textPartWidth}px`;
+      overlayElement.style.height = `${textPartHeight}px`;
+    },
+  },
 });
 
 /* setTimeout(() => {
