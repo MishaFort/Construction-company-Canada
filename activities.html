@@ -33,26 +33,30 @@
               <a class="link link--active" href=""> Activities </a>
               <ul class="header__sub-list">
                 <li>
-                  <a class="header__sub-link"> Railway Construction </a>
+                  <a class="header__sub-link"> Track & Structure Monitoring </a>
                 </li>
                 <li>
-                  <a class="header__sub-link"> Civil Engineering </a>
+                  <a class="header__sub-link"> Site Surveys </a>
                 </li>
                 <li>
-                  <a class="header__sub-link"> Telecoms </a>
+                  <a class="header__sub-link">
+                    CRE/CRT Management, TSR/ESR & THB
+                  </a>
                 </li>
                 <li>
-                  <a class="header__sub-link"> Multi-Utilities </a>
+                  <a class="header__sub-link"> Tamping & Stressing </a>
                 </li>
                 <li>
-                  <a class="header__sub-link"> Power Networks </a>
+                  <a class="header__sub-link">
+                    Construction & Engineering management support
+                  </a>
                 </li>
-                <li>
+                <!--                 <li>
                   <a class="header__sub-link"> General Construction </a>
                 </li>
                 <li>
                   <a class="header__sub-link"> Design & Consultancy </a>
-                </li>
+                </li> -->
               </ul>
             </li>
             <li class="header__link">
@@ -64,12 +68,13 @@
         </nav>
 
         <div class="header__container">
-          <a class="header__logo" href="/">
+          <a class="logo" href="">
             <img
-              class="header__logo--size"
+              class="logo__image"
               src="./images/logo.png"
-              alt="Logo 'Canada Phoenix'"
+              alt="Logo 'Phoenix'"
             />
+            <p class="logo__text">Phoenix Rail Engineering Services</p>
           </a>
 
           <button class="header__burger menu-btn-open" type="button">
@@ -105,7 +110,7 @@
                       class="header__sub-link"
                       href="#activities-railway-construction"
                     >
-                      Railway Construction
+                      Track & Structure Monitoring
                     </a>
                   </li>
                   <li>
@@ -113,12 +118,12 @@
                       class="header__sub-link"
                       href="#activities-civil-engineering"
                     >
-                      Civil Engineering
+                      Site Surveys
                     </a>
                   </li>
                   <li>
                     <a class="header__sub-link" href="#activities-telecoms">
-                      Telecoms
+                      CRE/CRT Management, TSR/ESR & THB
                     </a>
                   </li>
                   <li>
@@ -126,7 +131,7 @@
                       class="header__sub-link"
                       href="#activities-multi-utilities"
                     >
-                      Multi-Utilities
+                      Tamping & Stressing
                     </a>
                   </li>
                   <li>
@@ -134,10 +139,10 @@
                       class="header__sub-link"
                       href="#activities-power-networks"
                     >
-                      Power Networks
+                      Construction & Engineering management support
                     </a>
                   </li>
-                  <li>
+                  <!--                   <li>
                     <a
                       class="header__sub-link"
                       href="#activities-general-construction"
@@ -152,7 +157,7 @@
                     >
                       Design & Consultancy
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </li>
               <li class="header__link">
@@ -170,14 +175,6 @@
     <main>
       <!--                   Hero section                       -->
       <section class="hero-section">
-        <!-- <a class="hero-section__logo" href="/">
-          <img
-            class="hero-section__logo--size"
-            src="./images/logo.png"
-            alt="Logo 'Canada Phoenix'"
-          />
-        </a> -->
-
         <div class="overlay"></div>
 
         <div class="hero-section__slider">
@@ -193,6 +190,14 @@
           <div class="swiper-container">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
+                <a class="hero-section__logo logo" href="/">
+                  <img
+                    class="logo__image"
+                    src="./images/logo.png"
+                    alt="Logo 'Phoenix'"
+                  />
+                  <p class="logo__text">Phoenix Rail Engineering Services</p>
+                </a>
                 <img
                   class="hero-section__image"
                   src="./images/hero-slider-1.jpg"
@@ -204,14 +209,22 @@
                 />
 
                 <div class="hero-section__text-part">
-                  <h1 class="hero-section__title">What we do</h1>
+                  <h1 class="hero-section__title">About Us</h1>
                   <p class="hero-section__text">
-                    At Phoenix Rail Engineering Services, we aim to offer a
-                    fully comprehensive engineering & management support
+                    Phoenix Rail aims to is to become a dynamic player in the
+                    rail industry. Offering a wide range of support services
                   </p>
                 </div>
               </li>
               <li class="swiper-slide">
+                <a class="hero-section__logo logo" href="/">
+                  <img
+                    class="logo__image"
+                    src="./images/logo.png"
+                    alt="Logo 'Phoenix'"
+                  />
+                  <p class="logo__text">Phoenix Rail Engineering Services</p>
+                </a>
                 <img
                   class="hero-section__image"
                   src="./images/hero-slider-2.jpg"
@@ -222,10 +235,10 @@
                   src="./images/hero-slider-gradient-top.png"
                 />
                 <div class="hero-section__text-part">
-                  <h1 class="hero-section__title">About Us</h1>
+                  <h1 class="hero-section__title">What we do</h1>
                   <p class="hero-section__text">
-                    Phoenix Rail aims to is to become a dynamic player in the
-                    rail industry. Offering a wide range of support services
+                    At Phoenix Rail Engineering Services, we aim to offer a
+                    fully comprehensive engineering & management support
                   </p>
                 </div>
               </li>
@@ -242,7 +255,7 @@
           </button>
         </div>
       </section>
-      <!--                  Main section                       -->
+      <!--                   Section 1                       -->
       <section class="activities-list" id="activities-list">
         <img
           class="activities-list__background"
@@ -273,68 +286,72 @@
             <li class="activities-list__icons-item">
               <a
                 class="activities-list__link"
-                href="#activities-railway-construction"
+                href="#activities-track-structure-monitoring"
               >
                 <img
                   class="activities-list__icon"
-                  src="./images/activities-railway.webp"
-                  alt="Railway Construction"
+                  src="./images/activities-track-structure-monitoring.webp"
+                  alt="Track & Structure Monitoring"
                 />
                 <h2 class="activities-list__icon-title">
-                  Railway Construction
+                  Track & Structure Monitoring
+                </h2>
+              </a>
+            </li>
+            <li class="activities-list__icons-item">
+              <a class="activities-list__link" href="#activities-site-surveys">
+                <img
+                  class="activities-list__icon"
+                  src="./images/activities-site-surveys.webp"
+                  alt="Site Surveys"
+                />
+                <h2 class="activities-list__icon-title">Site Surveys</h2>
+              </a>
+            </li>
+            <li class="activities-list__icons-item">
+              <a
+                class="activities-list__link"
+                href="#activities-cre-crt-management-tsr-esr-thb"
+              >
+                <img
+                  class="activities-list__icon"
+                  src="./images/activities-cre-crt-management-tsr-esr-thb.webp"
+                  alt="CRE/CRT Management, TSR/ESR & THB"
+                />
+                <h2 class="activities-list__icon-title">
+                  CRE/CRT Management, TSR/ESR & THB
                 </h2>
               </a>
             </li>
             <li class="activities-list__icons-item">
               <a
                 class="activities-list__link"
-                href="#activities-civil-engineering"
+                href="#activities-tamping-stressing"
               >
                 <img
                   class="activities-list__icon"
-                  src="./images/activities-civil.webp"
-                  alt="Civil Engineering"
+                  src="./images/activities-tamping-stressing.webp"
+                  alt="Tamping & Stressing"
                 />
-                <h2 class="activities-list__icon-title">Civil Engineering</h2>
-              </a>
-            </li>
-            <li class="activities-list__icons-item">
-              <a class="activities-list__link" href="#activities-telecoms">
-                <img
-                  class="activities-list__icon"
-                  src="./images/activities-telecoms.webp"
-                  alt="Telecoms"
-                />
-                <h2 class="activities-list__icon-title">Telecoms</h2>
+                <h2 class="activities-list__icon-title">Tamping & Stressing</h2>
               </a>
             </li>
             <li class="activities-list__icons-item">
               <a
                 class="activities-list__link"
-                href="#activities-multi-utilities"
+                href="#activities-construction-engineering-management-support"
               >
                 <img
                   class="activities-list__icon"
-                  src="./images/activities-multi-utilities.webp"
-                  alt="Multi-Utilities"
+                  src="./images/activities-construction-engineering-management-support.webp"
+                  alt="Construction & Engineering management support"
                 />
-                <h2 class="activities-list__icon-title">Multi-Utilities</h2>
+                <h2 class="activities-list__icon-title">
+                  Construction & Engineering management support
+                </h2>
               </a>
             </li>
-            <li class="activities-list__icons-item">
-              <a
-                class="activities-list__link"
-                href="#activities-power-networks"
-              >
-                <img
-                  class="activities-list__icon"
-                  src="./images/activities-power-networks.webp"
-                  alt="Power Networks"
-                />
-                <h2 class="activities-list__icon-title">Power Networks</h2>
-              </a>
-            </li>
-            <li class="activities-list__icons-item">
+            <!-- <li class="activities-list__icons-item">
               <a
                 class="activities-list__link"
                 href="#activities-general-construction"
@@ -363,7 +380,7 @@
                   Design & Consultancy
                 </h2>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- </div> -->
@@ -371,258 +388,84 @@
       <!--                   Section 2                       -->
       <section class="activities-buttons" id="activities-buttons">
         <div class="activities-buttons__container">
-          <button class="button" type="button">Railway Construction</button>
-          <button class="button button__left-border" type="button">
-            Civil Engineering
+          <button class="button" id="track-structure-monitoring" type="button">
+            Track & Structure Monitoring
           </button>
-          <button class="button button__left-border" type="button">
-            Telecoms
+          <button
+            class="button button__left-border"
+            id="site-surveys"
+            type="button"
+          >
+            Site Surveys
           </button>
-          <button class="button button__left-border" type="button">
-            Multi-Utilities
+          <button
+            class="button button__left-border"
+            id="cre-crt-management-tsr-esr-thb"
+            type="button"
+          >
+            CRE/CRT Management, TSR/ESR & THB
           </button>
-          <button class="button button__left-border" type="button">
-            Power Networks
+          <button
+            class="button button__left-border"
+            id="tamping-stressing"
+            type="button"
+          >
+            Tamping & Stressing
           </button>
-          <button class="button button__left-border" type="button">
+          <button
+            class="button button__left-border"
+            id="construction-engineering-management-support"
+            type="button"
+          >
+            Construction & Engineering management support
+          </button>
+          <!-- <button class="button button__left-border" type="button">
             General Construction
           </button>
           <button class="button button__left-border" type="button">
             Design & Consultancy
-          </button>
+          </button> -->
         </div>
       </section>
-      <!--                   Section 1                     -->
+      <!--                   Section 3                     -->
       <section class="activities-section">
         <div class="container">
           <div
             class="activities-section__container"
-            id="activities-railway-construction"
+            id="activities-track-structure-monitoring"
           >
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
-                src="./images/activities-railway.webp"
-                alt="Railway Construction icon"
+                src="./images/activities-track-structure-monitoring.webp"
+                alt="Track & Structure Monitoring icon"
               />
-              Railway Construction
+              Track & Structure Monitoring
             </h1>
             <div class="activities-section__content-container">
               <div class="activities-section__image-part">
                 <img
                   class="activities-section__image"
-                  src="./images/activities-railway.webp"
-                  alt="Railway example"
+                  src="./images/activities-track-structure-monitoring.webp"
+                  alt="Track & Structure Monitoring example"
                 />
               </div>
               <div class="activities-section__text-part">
                 <p class="activities-section__tagline">
-                  Global Infrastructure Group’s railway construction capability
-                  supports the latest technology, management and engineering
-                  know-how to deliver rail projects and services to the highest
-                  standards of quality and safety.
+                  At Phoenix Rail Engineering services, we have the capability
+                  to undertake various methods of monitoring from a simple low
+                  risk TMP to High Risk TMP.
                 </p>
                 <p class="activities-section__text">
-                  We offer our clients a service that helps them plan, build and
-                  maintain their railway infrastructure. We have the skills and
-                  experience to deliver multi disciplinary turnkey design and
-                  construct projects. We work to meet and exceed their needs on
-                  time and within budget. We understand the importance of
-                  minimising disruption to their operations while we work.
+                  We have the ability to either undertake remote monitoring
+                  where access is limited to conventional track monitoring.
                 </p>
                 <p class="activities-section__text">
-                  Working on mainline railways, metro systems and light rail, we
-                  offer as a group a full in-house solution and provide full
-                  design, build, test and commission services in the following
-                  areas:
-                </p>
-                <ul class="activities-section__list">
-                  <li>Civil, Structural Engineering and Building</li>
-                  <li>Mechanical, Electrical and Power</li>
-                  <li>Signalling</li>
-                  <li>Permanent Way</li>
-                  <li>Telecoms</li>
-                  <li>Facade Solutions</li>
-                  <li>Train On-Board Support Services</li>
-                  <li>Labour Supply</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="activities-section__container"
-            id="activities-civil-engineering"
-          >
-            <h1 class="activities-section__title">
-              <img
-                class="activities-section__icon"
-                src="./images/activities-civil.webp"
-                alt="Civil Engineering icon"
-              />
-              Civil Engineering
-            </h1>
-            <div class="activities-section__content-container">
-              <div class="activities-section__image-part">
-                <img
-                  class="activities-section__image"
-                  src="./images/activities-civil.webp"
-                  alt="Civil Engineering example"
-                />
-              </div>
-              <div class="activities-section__text-part">
-                <p class="activities-section__tagline">
-                  Global Infrastructure Group’s civil engineering capabilities
-                  take full responsibility and offer a fully managed service on
-                  projects outside of the railway infrastructure.
+                  All TMPs written & risk assessed in line with NR standard
+                  NR/L2/Civ/177.
                 </p>
                 <p class="activities-section__text">
-                  We can provide civil and structural engineering solutions from
-                  initial project planning and design, to enabling works
-                  covering site surveys, hazard and environmental assessments,
-                  procurement, onsite construction and equipment installation,
-                  through to final commissioning.
-                </p>
-                <p class="activities-section__text">
-                  We are flexible in our approach and offer bespoke solutions to
-                  our clients. We undertake civil engineering projects on a
-                  turnkey, consultancy, main contract, joint venture,
-                  sub-contract or resource supply basis to meet each individual
-                  client’s requirements.
-                </p>
-                <p class="activities-section__text">
-                  We apply our skills to new build, refurbishment and
-                  maintenance projects, our range of services include:
-                </p>
-                <ul class="activities-section__list">
-                  <li>Condition surveys</li>
-                  <li>Demolition and remediation</li>
-                  <li>Ground and site investigation</li>
-                  <li>Site excavation and enabling works</li>
-                  <li>Road construction/infrastructure</li>
-                  <li>Embankment works and retaining structures</li>
-                  <li>In-situ and precast concreting works</li>
-                  <li>Temporary works</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="activities-section__container" id="activities-telecoms">
-            <h1 class="activities-section__title">
-              <img
-                class="activities-section__icon"
-                src="./images/activities-telecoms.webp"
-                alt="Telecoms icon"
-              />
-              Telecoms
-            </h1>
-            <div class="activities-section__content-container">
-              <div class="activities-section__image-part">
-                <img
-                  class="activities-section__image"
-                  src="./images/activities-telecoms.webp"
-                  alt="Telecoms example"
-                />
-              </div>
-              <div class="activities-section__text-part">
-                <p class="activities-section__tagline">
-                  Global Infrastructure Group provides end-to-end solutions
-                  including design, construction and maintenance of
-                  communications networks.
-                </p>
-                <p class="activities-section__text">
-                  Our team of highly skilled telecommunications professionals
-                  includes telecom engineers, telecom riggers, fibre splicers
-                  and technicians.
-                </p>
-                <p class="activities-section__text">
-                  With decades of experience providing communication network
-                  delivery, we have the knowledge and experience to offer a full
-                  turnkey solution for the telecommunications infrastructure
-                  market and provide comprehensive solutions for the commercial,
-                  industrial and domestic markets.
-                </p>
-                <p class="activities-section__text">
-                  As part of our wider multi-utility solution, the Global
-                  Infrastructure Group also designs, builds and maintains gas,
-                  electricity and water networks.
-                </p>
-                <p class="activities-section__text">
-                  The range of telecom services on offer includes:
-                </p>
-                <ul class="activities-section__list">
-                  <li>
-                    3G, 4G and 5G equipment installation and commissioning
-                  </li>
-                  <li>IBC and DAS systems installation and commissioning</li>
-                  <li>Telecom equipment fit-outs</li>
-                  <li>Cable installation and management</li>
-                  <li>CCTV/access/security systems installation</li>
-                  <li>Network installation and configuration</li>
-                  <li>Wi-fi network installation and commissioning</li>
-                  <li>
-                    Tower construction, retro-fit, maintenance and inspection
-                  </li>
-                  <li>Operation and maintenance services</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="activities-section__container"
-            id="activities-multi-utilities"
-          >
-            <h1 class="activities-section__title">
-              <img
-                class="activities-section__icon"
-                src="./images/activities-multi-utilities.webp"
-                alt="Multi-Utilities icon"
-              />
-              Multi-Utilities
-            </h1>
-            <div class="activities-section__content-container">
-              <div class="activities-section__image-part">
-                <img
-                  class="activities-section__image"
-                  src="./images/activities-multi-utilities.webp"
-                  alt="Multi-Utilities example"
-                />
-              </div>
-              <div class="activities-section__text-part">
-                <p class="activities-section__tagline">
-                  Global Infrastructure Group have an in-depth understanding of
-                  the changing nature of the utilities market.
-                </p>
-                <p class="activities-section__text">
-                  This combined with our expertise and experience in design and
-                  construction enables us to offer a full range of services for
-                  the provision of new infrastructure.
-                </p>
-                <p class="activities-section__text">
-                  Clients benefit from us identifying options for procurement,
-                  installation and potential adoption by host utilities,
-                  retention of private networks and installation by independent
-                  Infrastructure Service Providers (ISPs).
-                </p>
-                <p class="activities-section__text">
-                  We are pride ourselves on our service delivery, which is both
-                  safe and responsible to the environment and the communities we
-                  serve and are proud of the long-term partnerships we have
-                  established with our clients within this sector of our
-                  operations.
-                </p>
-                <p class="activities-section__text">
-                  Our experience covers installation and connections in Gas,
-                  Electricity, Water and Communications across multiple sectors
-                  in both commercial and domestic situations.
-                </p>
-                <p class="activities-section__text">
-                  We have a strong track record of delivering innovative
-                  solutions for multi-utility projects, providing a fully
-                  managed offering, which is backed up by in-house design,
-                  engineering and delivery teams.
+                  We also undertake all types of Bridge & Structure monitoring.
                 </p>
               </div>
             </div>
@@ -630,53 +473,152 @@
 
           <div
             class="activities-section__container"
-            id="activities-power-networks"
+            id="activities-site-surveys"
           >
             <h1 class="activities-section__title">
               <img
                 class="activities-section__icon"
-                src="./images/activities-power-networks.webp"
-                alt="Power Networks icon"
+                src="./images/activities-site-surveys.webp"
+                alt="Site Surveys icon"
               />
-              Power Networks
+              Site Surveys
             </h1>
             <div class="activities-section__content-container">
               <div class="activities-section__image-part">
                 <img
                   class="activities-section__image"
-                  src="./images/activities-power-networks.webp"
-                  alt="Power Networks example"
+                  src="./images/activities-site-surveys.webp"
+                  alt="Site Surveys example"
                 />
               </div>
               <div class="activities-section__text-part">
                 <p class="activities-section__tagline">
-                  Global Infrastructure Group provide full turnkey Mechanical,
-                  Electrical and Power services that are constantly upgraded
-                  through rigorous training and development and are consistently
-                  delivered to the highest level.
+                  At Phoenix Rail Engineering services, we have the capability
+                  to undertake all surveying requirements, from topographical
+                  surveys, design validation surveys.
                 </p>
                 <p class="activities-section__text">
-                  Our fully managed offering includes the design, installation
-                  and commissioning of these specialist services, which are
-                  deployed for commercial and industrial clients for their power
-                  network projects.
+                  We also undertake surveys for rail replacement works including
+                  IBJ Recoveries & installation with a provision of a detailed
+                  siting form.
                 </p>
-                <p class="activities-section__text">
-                  Our range of services include:
-                </p>
-                <ul class="activities-section__list">
-                  <li>Sub-station refurbishments and new builds</li>
-                  <li>CCTV, access and security system installations</li>
-                  <li>Building management control systems</li>
-                  <li>Cable installation and management</li>
-                  <li>Lighting renewal and refurbishment</li>
-                  <li>Lighting control systems</li>
-                </ul>
               </div>
             </div>
           </div>
 
           <div
+            class="activities-section__container"
+            id="activities-cre-crt-management-tsr-esr-thb"
+          >
+            <h1 class="activities-section__title">
+              <img
+                class="activities-section__icon"
+                src="./images/activities-cre-crt-management-tsr-esr-thb.webp"
+                alt="CRE/CRT Management, TSR/ESR & THB icon"
+              />
+              CRE/CRT Management, TSR/ESR & THB
+            </h1>
+            <div class="activities-section__content-container">
+              <div class="activities-section__image-part">
+                <img
+                  class="activities-section__image"
+                  src="./images/activities-cre-crt-management-tsr-esr-thb.webp"
+                  alt="CRE/CRT Management, TSR/ESR & THB example"
+                />
+              </div>
+              <div class="activities-section__text-part">
+                <p class="activities-section__tagline">
+                  At Phoenix Rail Engineering Services, we have very experienced
+                  CRE (C) Track capability that can support your projects, along
+                  with this we offer CRT Management that also have the
+                  associated capability to erect & remove TSRs & ESRs.
+                </p>
+                <p class="activities-section__text">
+                  We can also supply related TSR/ESR Designs.
+                </p>
+                <p class="activities-section__text">
+                  All designs are reviewed by our CRE/Track Hand-backs prior to
+                  installation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="activities-section__container"
+            id="activities-tamping-stressing"
+          >
+            <h1 class="activities-section__title">
+              <img
+                class="activities-section__icon"
+                src="./images/activities-tamping-stressing.webp"
+                alt="Tamping & Stressing icon"
+              />
+              Tamping & Stressing
+            </h1>
+            <div class="activities-section__content-container">
+              <div class="activities-section__image-part">
+                <img
+                  class="activities-section__image"
+                  src="./images/activities-tamping-stressing.webp"
+                  alt="Tamping & Stressing example"
+                />
+              </div>
+              <div class="activities-section__text-part">
+                <p class="activities-section__tagline">
+                  With engineering at the heart of everything we do at Phoenix
+                  Rail Engineering Services, we have the capability to undertake
+                  all Tamping & Stressing requirements.
+                </p>
+                <p class="activities-section__text">
+                  Our in house engineering team can ensure all Tamping &
+                  Stressing required will be completed to the relevant NR
+                  Standards for Tamping & Stressing.
+                </p>
+                <p class="activities-section__text">
+                  All H&S AMP Documentation also provided along with all As
+                  built information.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="activities-section__container"
+            id="activities-construction-engineering-management-support"
+          >
+            <h1 class="activities-section__title">
+              <img
+                class="activities-section__icon"
+                src="./images/activities-construction-engineering-management-support.webp"
+                alt="Construction & Engineering management support icon"
+              />
+              Construction & Engineering management support
+            </h1>
+            <div class="activities-section__content-container">
+              <div class="activities-section__image-part">
+                <img
+                  class="activities-section__image"
+                  src="./images/activities-construction-engineering-management-support.webp"
+                  alt="Construction & Engineering management support example"
+                />
+              </div>
+              <div class="activities-section__text-part">
+                <p class="activities-section__tagline">
+                  Phoenix Rail Engineering Services, have the capabilities to
+                  support all of your engineering & management requirements,
+                  whether supplying a Track CRE to support your projects to on
+                  site & office support.
+                </p>
+                <p class="activities-section__text">
+                  With a team of industry accredited Engineers & Construction
+                  Managers, we’re there to support.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div
             class="activities-section__container"
             id="activities-general-construction"
           >
@@ -766,7 +708,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
@@ -776,12 +718,13 @@
         <div class="container">
           <div class="footer__container">
             <nav class="footer__logo">
-              <a href="#">
+              <a class="logo" href="#">
                 <img
-                  class="footer__logo--size"
+                  class="logo__image"
                   src="./images/logo.png"
-                  alt="Logo 'Canada Phoenix'"
+                  alt="Logo 'Phoenix'"
                 />
+                <p class="logo__text">Phoenix Rail Engineering Services</p>
               </a>
             </nav>
             <nav class="footer__links">
@@ -849,7 +792,7 @@
         </div>
       </section>
       <section class="under-footer">
-        <p class="copyright__year">&copy;Canada Phoenix</p>
+        <p class="copyright__year"></p>
         <a class="under-footer__copyright" href="#" target="_blank">
           Privacy & Cookie Policy
         </a>
@@ -864,7 +807,7 @@
     <script src="./js/activities-page.js"></script>
 
     <!--   <script src="./js/sections.js"></script> -->
-    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-    <script src="./js/footer-form-validator.js"></script>
+    <!-- <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script> -->
+    <!-- <script src="./js/footer-form-validator.js"></script> -->
   </body>
 </html>

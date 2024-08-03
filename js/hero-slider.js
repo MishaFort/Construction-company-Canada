@@ -12,10 +12,8 @@ function setOverlayStyles() {
 setOverlayStyles(); */
 
 const swiper = new Swiper('.swiper-container', {
-  /*  lazy: {
-    loadPrevNext: false,
-    loadOnTransitionStart: false,
-  }, */
+  lazy: true,
+
   loop: true,
   slidesPerView: 1,
 

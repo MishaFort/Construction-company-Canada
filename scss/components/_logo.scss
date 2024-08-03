@@ -1,0 +1,52 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 180px;
+  font-family: 'Agency FB';
+  font-size: 22px;
+  line-height: 1.1;
+  color: black;
+  text-decoration: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    gap: 12px;
+    max-width: 290px;
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    max-width: 390px;
+    font-size: 44px;
+  }
+
+  &__image {
+    max-width: 80px;
+    width: 100%;
+    max-height: 80px;
+    height: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 140px;
+      max-height: 140px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+
+  &__text {
+    max-width: 90px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 130px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 170px;
+    }
+  }
+}

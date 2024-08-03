@@ -37,3 +37,10 @@
   src: url('../fonts/futura-pt-700.woff2') format('woff2'),
     url('/fonts/futura-pt-700.woff') format('woff');
 }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Agency FB';
+  font-weight: 400;
+  src: url('../fonts/agency-fb-400.woff2') format('woff2');
+}

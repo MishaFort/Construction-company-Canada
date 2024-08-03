@@ -10,7 +10,9 @@ headerSubLinks.forEach(link => {
       .trim()
       .toLowerCase()
       .replace(/&/g, '')
-      .replace(/\s+/g, '-')}`;
+      .replace(/\s+/g, '-')}`
+      .replace(/\//g, '-')
+      .replace(/,/g, '');
     const targetDiv = document.getElementById(targetId);
 
     if (targetDiv) {
@@ -61,7 +63,9 @@ buttons.forEach(button => {
       .trim()
       .toLowerCase()
       .replace(/&/g, '')
-      .replace(/\s+/g, '-');
+      .replace(/\s+/g, '-')
+      .replace(/\//g, '-')
+      .replace(/,/g, '');
     const sectionToShow = document.getElementById(`activities-${buttonText}`);
 
     buttons.forEach(button => {
@@ -101,13 +105,17 @@ activitiesListLinks.forEach(link => {
       .trim()
       .toLowerCase()
       .replace(/&/g, '')
-      .replace(/\s+/g, '-');
+      .replace(/\s+/g, '-')
+      .replace(/\//g, '-')
+      .replace(/,/g, '');
 
     const correspondingButton = [...activitiesSublinkButtons].find(button => {
       const normalizedButtonText = button.textContent
         .trim()
         .replace(/&/g, '')
         .replace(/\s+/g, '-')
+        .replace(/\//g, '-')
+        .replace(/,/g, '')
         .toLowerCase();
       return normalizedButtonText.includes(buttonText);
     });
@@ -138,29 +146,21 @@ function handleHashChange() {
       sectionToShow.style.display = 'block';
       activitiesButtons.style.display = 'block';
 
-      const buttonText = sectionToShow.id
-        .replace('activities-', '')
-        .replace(/-/g, ' ')
-        .trim();
-      const correspondingButton = Array.from(
-        document.querySelectorAll('.activities-buttons .button')
-      ).find(button =>
-        button.textContent
-          .trim()
-          .toLowerCase()
-          .replace(/-/g, ' ')
-          .includes(buttonText)
-      );
-      if (correspondingButton) {
-        correspondingButton.style.textDecoration = 'underline';
-        correspondingButton.style.opacity = '0.6';
+      const sectionToShowIdHash = sectionToShow.id.replace('activities-', '');
+      const correspondingButtonHash =
+        document.getElementById(sectionToShowIdHash);
+
+      if (correspondingButtonHash) {
+        correspondingButtonHash.style.textDecoration = 'underline';
+        correspondingButtonHash.style.opacity = '0.6';
+      } else {
+        const buttons = document.querySelectorAll('.activities-buttons button');
+        buttons.forEach(button => {
+          button.style.textDecoration = 'none';
+          button.style.opacity = '1';
+        });
       }
     }
-  } else {
-    buttons.forEach(button => {
-      button.style.textDecoration = 'none';
-      button.style.opacity = '1';
-    });
   }
 }
 
