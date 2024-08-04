@@ -75,11 +75,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    row-gap: 8px;
+    /* row-gap: 8px; */
+    column-gap: 8px;
     border-top: solid 1px var(--color-primary-dark);
 
     @media screen and (min-width: $bp-mobile) {
       flex-direction: row;
+      align-items: flex-start;
     }
   }
 

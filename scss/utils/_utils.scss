@@ -10,10 +10,15 @@
 .overlay {
   /*  display: none; */
   position: absolute;
-  bottom: 20%;
+  /* bottom: 20%; */
   left: 0;
+  bottom: 0;
 
   z-index: 2;
+
+  @media screen and (min-width: 1140px) {
+    bottom: 20%;
+  }
 
   &:active {
     cursor: not-allowed;

@@ -64,8 +64,8 @@ heroTextPart.forEach((textPart, index) => {
   const observer = new ResizeObserver(entries => {
     if (overlay) {
       overlay.style.height = `${textPart.offsetHeight}px`;
-      overlay.style.top = `${textPart.offsetTop}px`;
-      overlay.style.left = `${textPart.offsetLeft}px`;
+      /* overlay.style.top = `${textPart.offsetTop}px`;
+      overlay.style.left = `${textPart.offsetLeft}px`; */
       overlay.style.width = `${textPart.offsetWidth}px`;
     }
   });
