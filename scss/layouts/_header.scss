@@ -70,14 +70,16 @@
     /* border: 0; */
     text-decoration: none;
     cursor: pointer;
+    transition: color 200ms;
 
     @media screen and (min-width: $bp-desktop) {
       width: auto;
     }
 
     &:hover {
-      text-decoration: underline;
+      color: #f78e26;
       background: var(--color-header-sublinks-background);
+      text-decoration: underline;
     }
   }
 

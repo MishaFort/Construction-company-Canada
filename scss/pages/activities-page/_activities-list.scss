@@ -14,10 +14,14 @@
   }
 
   &__background {
-    position: absolute;
-    /*  margin-top: 50px; */
-    margin-left: -300px;
-    width: 260px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      display: block;
+      margin-left: -300px;
+      width: 260px;
+    }
   }
 
   &__container {

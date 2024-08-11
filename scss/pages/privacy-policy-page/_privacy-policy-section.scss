@@ -1,4 +1,4 @@
-.projects-section {
+.privacy-policy-section {
   /*  margin: 28px 0; */
   padding: 20px 0 28px;
   color: var(--color-primary-dark);
@@ -6,7 +6,7 @@
 
   @media screen and (min-width: $bp-tablet) {
     /* margin: 40px 0; */
-    padding: 24px 8px 36px;
+    padding: 24px 16px 36px;
   }
 
   @media screen and (min-width: $bp-desktop) {
@@ -20,15 +20,15 @@
     @media screen and (min-width: $bp-desktop) {
       display: block;
       position: absolute;
-      margin-top: -18px;
-      margin-left: -240px;
-      width: 180px;
+      margin-left: -250px;
+      width: 240px;
     }
   }
 
-  &__text-part {
-    /*   max-width: 850px; */
-    max-width: 1000px;
+  &__container {
+    & p {
+      margin: 18px 0;
+    }
   }
 
   &__title {
@@ -51,8 +51,9 @@
     margin-bottom: 12px;
   }
 
-  /*   &__tagline {
-    font-size: 20px;
+  &__tagline {
+    padding: 8px 0;
+    font-size: 26px;
     font-weight: 500;
     line-height: 1.2;
 
@@ -63,5 +64,15 @@
     @media screen and (min-width: $bp-desktop) {
       font-weight: 700;
     }
-  } */
+  }
+
+  &__link {
+    color: rgb(108, 197, 233);
+    text-decoration: none;
+    transition: opacity 500ms ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }

@@ -8,6 +8,7 @@
   line-height: 1.1;
   color: black;
   text-decoration: none;
+  transition: filter 600ms ease;
 
   @media screen and (min-width: $bp-tablet) {
     gap: 12px;
@@ -19,6 +20,11 @@
   @media screen and (min-width: $bp-desktop) {
     max-width: 390px;
     font-size: 44px;
+  }
+
+  &:hover {
+    filter: saturate(1.8);
+    cursor: pointer;
   }
 
   &__image {
@@ -39,6 +45,9 @@
   }
 
   &__text {
+    position: relative;
+    overflow: hidden;
+
     max-width: 90px;
 
     @media screen and (min-width: $bp-tablet) {
@@ -48,5 +57,33 @@
     @media screen and (min-width: $bp-desktop) {
       max-width: 170px;
     }
+
+    &::before {
+      content: 'Phoenix Rail';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      overflow: hidden;
+      color: #f78e26;
+      white-space: pre;
+      transition: width 700ms;
+    }
+
+    &::after {
+      content: 'Engineering Services';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      overflow: hidden;
+      color: #f78e26;
+      transition: width 700ms;
+    }
+  }
+
+  &:hover .logo__text::before,
+  &:hover .logo__text::after {
+    width: 100%;
   }
 }
