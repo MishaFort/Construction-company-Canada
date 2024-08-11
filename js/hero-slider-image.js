@@ -17,7 +17,8 @@ window.addEventListener('resize', setImageSource);
 
 setImageSource(); */
 
-const setImageSource = () => {
+//////////////////////
+/* const setImageSource = () => {
   const viewportWidth = window.innerWidth;
   const isRetina = window.devicePixelRatio > 1;
   const imageElements = document.querySelectorAll('.hero-section__image');
@@ -45,4 +46,4 @@ const setImageSource = () => {
 
 window.addEventListener('resize', setImageSource);
 
-setImageSource();
+setImageSource(); */
