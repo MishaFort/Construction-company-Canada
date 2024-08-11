@@ -69,10 +69,10 @@
   &__link {
     color: rgb(108, 197, 233);
     text-decoration: none;
-    transition: opacity 500ms ease;
+    transition: color 200ms;
 
     &:hover {
-      opacity: 0.6;
+      color: rgba(108, 197, 233, 0.6);
     }
   }
 }
