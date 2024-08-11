@@ -544,5 +544,16 @@
     <script src="./js/hero-slider-image.js"></script>
 
     <script src="./js/logo-on-fire.js"></script>
+
+    <script>
+      const privacyPolicyHash = window.location.hash;
+
+      if (privacyPolicyHash !== '#privacy-policy-section') {
+        const element = document.getElementById('privacy-policy-section');
+        if (element) {
+          element.scrollIntoView();
+        }
+      }
+    </script>
   </body>
 </html>
