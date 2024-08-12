@@ -116,9 +116,22 @@ buttons.forEach(button => {
       }
     });
 
-    if (sectionToShow) {
+    /*   if (sectionToShow) {
       sectionToShow.style.display = 'block';
       window.location.hash = `#${sectionToShow.id}`;
+    } */
+
+    if (sectionToShow) {
+      if (sectionToShow.style.display === 'block') {
+        // If the section is already open, scroll to the top of the section
+        window.scrollTo(0, sectionToShow.offsetTop);
+      } else {
+        sectionToShow.style.display = 'block';
+        window.location.hash = `#${sectionToShow.id}`;
+        window.scrollTo(0, 0);
+        document.querySelector('.activities-list').style.display = 'none';
+        document.querySelector('.activities-buttons').style.display = 'block';
+      }
     }
 
     activitiesButtons.style.display = 'block';
