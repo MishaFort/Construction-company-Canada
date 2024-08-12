@@ -72,22 +72,6 @@
                     Construction & Engineering management support
                   </a>
                 </li>
-                <!--                 <li>
-                  <a
-                    class="header__sub-link"
-                    href="/activities.html#activities-general-construction"
-                  >
-                    General Construction
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="header__sub-link"
-                    href="/activities.html#activities-design-consultancy"
-                  >
-                    Design & Consultancy
-                  </a>
-                </li> -->
               </ul>
             </li>
             <li class="header__link">
@@ -209,7 +193,14 @@
     <main>
       <!--                   Section 1                       -->
       <section class="hero-section">
-        <div class="overlay"></div>
+        <div class="overlay">
+          <button
+            class="hero-section__overlay-button text-uppercase"
+            type="button"
+          >
+            &#10148; read more
+          </button>
+        </div>
 
         <div class="hero-section__slider">
           <button
@@ -248,6 +239,9 @@
                     Phoenix Rail aims to is to become a dynamic player in the
                     rail industry. Offering a wide range of support services
                   </p>
+                  <div class="hero-section__read-more-button text-uppercase">
+                    &#10148; read more
+                  </div>
                 </div>
               </li>
               <li class="swiper-slide">
@@ -274,6 +268,11 @@
                     At Phoenix Rail Engineering Services, we aim to offer a
                     fully comprehensive engineering & management support
                   </p>
+                  <div
+                    class="hero-section__read-more-button hero-section__read-more-button--second text-uppercase"
+                  >
+                    &#10148; read more
+                  </div>
                 </div>
               </li>
             </ul>
@@ -290,7 +289,7 @@
         </div>
       </section>
       <!--                   Section 2                       -->
-      <section class="projects-section">
+      <section class="projects-section" id="projects-section">
         <img
           class="projects-section__background"
           src="./images/activbackgroundlogo.webp"
@@ -436,5 +435,6 @@
 
     <!-- <script src="./js/dynamic-overlay.js"></script> -->
     <script src="./js/logo-on-fire.js"></script>
+    <script src="./js/hero-slider-overlay.js"></script>
   </body>
 </html>

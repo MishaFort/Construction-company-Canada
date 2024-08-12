@@ -1,16 +1,3 @@
-/* const overlay = document.querySelector('.overlay');
-const textPart = document.querySelector('.hero-section__text-part');
-
-// Function to set overlay styles
-function setOverlayStyles() {
-  const textPartRect = textPart.getBoundingClientRect();
-  overlay.style.width = `${textPartRect.width}px`;
-  overlay.style.height = `${textPartRect.height}px`;
-}
-
-// Call the function on page load
-setOverlayStyles(); */
-
 const swiper = new Swiper('.swiper-container', {
   /* lazy: true, */
   speed: 800,
@@ -38,7 +25,6 @@ const swiper = new Swiper('.swiper-container', {
     depth: 150,
   },
 
-  /*   effect: 'flip', */
   on: {
     slideChange: function () {
       const currentSlide = this.slides[this.activeIndex];
@@ -55,8 +41,3 @@ const swiper = new Swiper('.swiper-container', {
     },
   },
 });
-
-/* setTimeout(() => {
-  swiper.wrapper.classList.add('swiper-initialized');
-}, 300); // Delay by 300ms
- */

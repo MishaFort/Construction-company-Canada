@@ -15,7 +15,7 @@ headerSubLinks.forEach(link => {
       .replace(/,/g, '');
     const targetDiv = document.getElementById(targetId);
 
-    if (targetDiv) {
+    /* if (targetDiv) {
       activitiesDivs.forEach(div => (div.style.display = 'none'));
 
       targetDiv.style.display = 'block';
@@ -42,6 +42,36 @@ headerSubLinks.forEach(link => {
 
         correspondingButton.style.textDecoration = 'underline';
         correspondingButton.style.opacity = '0.6';
+      }
+    } */
+
+    if (targetDiv) {
+      if (targetDiv.style.display === 'block') {
+        // If the target div is already open, scroll to it
+        window.scrollTo(0, targetDiv.offsetTop);
+      } else {
+        activitiesDivs.forEach(div => (div.style.display = 'none'));
+        targetDiv.style.display = 'block';
+        window.location.hash = `#${targetDiv.id}`;
+        window.scrollTo(0, 0);
+        document.querySelector('.activities-list').style.display = 'none';
+        document.querySelector('.activities-buttons').style.display = 'block';
+
+        const correspondingButton = [...activitiesSublinkButtons].find(button =>
+          button.textContent
+            .trim()
+            .toLowerCase()
+            .includes(link.textContent.trim().toLowerCase())
+        );
+
+        if (correspondingButton) {
+          activitiesSublinkButtons.forEach(button => {
+            button.style.textDecoration = 'none';
+            button.style.opacity = '1';
+          });
+          correspondingButton.style.textDecoration = 'underline';
+          correspondingButton.style.opacity = '0.6';
+        }
       }
     }
   });
@@ -151,21 +181,40 @@ function handleHashChange() {
         document.getElementById(sectionToShowIdHash);
 
       if (correspondingButtonHash) {
-        correspondingButtonHash.style.textDecoration = 'underline';
-        correspondingButtonHash.style.opacity = '0.6';
-      } else {
-        const buttons = document.querySelectorAll('.activities-buttons button');
+        // Remove underline from all buttons
         buttons.forEach(button => {
           button.style.textDecoration = 'none';
           button.style.opacity = '1';
         });
+        // Add underline to the corresponding button
+        correspondingButtonHash.style.textDecoration = 'underline';
+        correspondingButtonHash.style.opacity = '0.6';
       }
+
+      window.scrollTo(0, sectionToShow.offsetTop);
+    }
+  } else {
+    // If the URL is activities.html, reset the state
+    if (window.location.pathname === '/activities.html') {
+      activitiesDivs.forEach(div => (div.style.display = 'none'));
+      document.querySelector('.activities-list').style.display = 'block';
+      document.querySelector('.activities-buttons').style.display = 'none';
+      window.scrollTo(0, document.querySelector('.activities-list').offsetTop);
     }
   }
 }
 
 window.addEventListener('load', handleHashChange);
 window.addEventListener('hashchange', handleHashChange);
+window.addEventListener('pageshow', function (event) {
+  if (event.persisted) {
+    // If the page was restored from the browser's cache, scroll to the anchor
+    handleHashChange();
+  }
+});
+
+// Set scroll restoration to manual
+window.history.scrollRestoration = 'manual';
 
 ////////////////////////////////////////////////////////////////////////////
 
