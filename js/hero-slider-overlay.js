@@ -51,7 +51,8 @@ overlayButton.addEventListener('click', () => {
     href = '#projects-section';
   } else if (
     currentUrl === 'https://mishafort.github.io/Construction-company-Canada/' ||
-    'https://mishafort.github.io/Construction-company-Canada/#projects-section'
+    currentUrl ===
+      'https://mishafort.github.io/Construction-company-Canada/#projects-section'
   ) {
     href =
       'https://mishafort.github.io/Construction-company-Canada/#projects-section';
