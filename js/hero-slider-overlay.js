@@ -23,6 +23,19 @@ overlayButton.addEventListener('mouseout', () => {
   readMoreButtonSecond.style.opacity = 1;
 });
 
-overlayButton.addEventListener('click', () => {
+/* overlayButton.addEventListener('click', () => {
   window.location.href = '/#projects-section';
+}); */
+
+overlayButton.addEventListener('click', () => {
+  const currentPage = window.location.pathname;
+  let href = '';
+
+  if (currentPage === '/index.html') {
+    href = '#projects-section';
+  } else {
+    href = '/#projects-section';
+  }
+
+  window.location.href = href;
 });
