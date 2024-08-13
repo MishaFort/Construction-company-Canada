@@ -47,11 +47,13 @@ overlayButton.addEventListener('click', () => {
   const currentUrl = window.location.href;
   let href = '';
 
-  if (
-    currentPage === '/index.html' ||
+  if (currentPage === '/index.html') {
+    href = '#projects-section';
+  } else if (
     currentUrl === 'https://mishafort.github.io/Construction-company-Canada/'
   ) {
-    href = '#projects-section';
+    href =
+      'https://mishafort.github.io/Construction-company-Canada/#projects-section';
   } else {
     href = '/#projects-section';
   }
