@@ -27,11 +27,30 @@ overlayButton.addEventListener('mouseout', () => {
   window.location.href = '/#projects-section';
 }); */
 
-overlayButton.addEventListener('click', () => {
+/* overlayButton.addEventListener('click', () => {
   const currentPage = window.location.pathname;
   let href = '';
 
   if (currentPage === '/index.html') {
+    href = '#projects-section';
+  } else {
+    href = '/#projects-section';
+  }
+
+  window.location.href = href;
+}); */
+
+//delete this bullshit later
+
+overlayButton.addEventListener('click', () => {
+  const currentPage = window.location.pathname;
+  const currentUrl = window.location.href;
+  let href = '';
+
+  if (
+    currentPage === '/index.html' ||
+    currentUrl === 'https://mishafort.github.io/Construction-company-Canada/'
+  ) {
     href = '#projects-section';
   } else {
     href = '/#projects-section';
