@@ -27,6 +27,8 @@ overlayButton.addEventListener('mouseout', () => {
   window.location.href = '/#projects-section';
 }); */
 
+//and this one delete maybe (хотя тут страница а не url)
+
 /* overlayButton.addEventListener('click', () => {
   const currentPage = window.location.pathname;
   let href = '';
