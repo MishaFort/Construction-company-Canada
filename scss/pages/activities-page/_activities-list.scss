@@ -2,15 +2,10 @@
   position: relative;
   margin: 0 auto;
   padding: 20px 0 52px;
-  /* max-width: 1500px; */
 
   @media screen and (min-width: $bp-desktop) {
     padding-left: 300px;
     padding-bottom: 80px;
-    /* background-image: url('/images/activbackgroundlogo.png');
-    background-position: 0 50px;
-    background-repeat: no-repeat;
-    background-size: 260px; */
   }
 
   &__background {
@@ -79,7 +74,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* row-gap: 8px; */
     column-gap: 8px;
     border-top: solid 1px var(--color-primary-dark);
 
@@ -98,10 +92,6 @@
     @media screen and (min-width: $bp-tablet) {
       width: calc(33.33% - 20px);
     }
-
-    /* &:last-child {
-      margin: 0 auto;
-    } */
   }
 
   &__link {
@@ -109,7 +99,6 @@
     flex-direction: column;
     align-items: center;
     gap: 6px;
-
     color: var(--color-primary-dark);
     text-decoration: none;
     transition: opacity 500ms ease;

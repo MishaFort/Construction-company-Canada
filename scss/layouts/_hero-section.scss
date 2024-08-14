@@ -69,19 +69,14 @@
     width: 100%;
     padding: 10px 20px 20px;
     color: var(--color-primary-light);
-    background: rgb(108, 197, 233);
+    background: var(--color-background-light);
     font-weight: 500;
     cursor: default;
-
-    @media screen and (min-width: $bp-tablet) {
-      /*   gap: 4px; */
-    }
 
     @media screen and (min-width: $bp-desktop) {
       position: absolute;
       padding-top: 15px;
-      /*   padding-top: 20px; */
-      background: rgba(108, 197, 233, 0.8);
+      background: #6cc5e9cc;
     }
   }
 

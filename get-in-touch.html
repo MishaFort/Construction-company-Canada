@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Phoenix Rail Engineering Services" />
+    <meta
+      name="description"
+      content="Phoenix Rail Engineering Services Contacts"
+    />
     <title>Canada Phoenix</title>
     <link rel="stylesheet" href="./css/get-in-touch-page.min.css" />
     <link
@@ -15,8 +18,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
-    <!-- <link rel="stylesheet" href="./css/aos.css" /> -->
   </head>
   <body>
     <!--                    Header                      -->
@@ -175,7 +176,7 @@
     </header>
     <!--                    Main                      -->
     <main>
-      <!--                   Section 1                       -->
+      <!--                   Hero Section                        -->
       <section class="hero-section">
         <div class="overlay">
           <button
@@ -193,13 +194,14 @@
           >
             <img
               class="hero-section__button--sized"
-              src="./images/slider-arrow.png"
+              src="./images/slider-arrow.webp"
+              alt="slider arrow"
             />
           </button>
           <div class="swiper-container">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <a class="hero-section__logo logo" href="/">
+                <a class="hero-section__logo logo" href="">
                   <img
                     class="logo__image"
                     src="./images/logo.webp"
@@ -210,13 +212,13 @@
                 <img
                   class="hero-section__image"
                   src="./images/hero-slider-1-large.avif"
-                  alt="slider-1"
+                  alt="slider image"
                 />
                 <img
                   class="hero-section__gradient"
                   src="./images/hero-slider-gradient-top.png"
+                  alt="gradient"
                 />
-
                 <div class="hero-section__text-part">
                   <h1 class="hero-section__title">About Us</h1>
                   <p class="hero-section__text">
@@ -229,7 +231,7 @@
                 </div>
               </li>
               <li class="swiper-slide">
-                <a class="hero-section__logo logo" href="/">
+                <a class="hero-section__logo logo" href="">
                   <img
                     class="logo__image"
                     src="./images/logo.webp"
@@ -240,11 +242,12 @@
                 <img
                   class="hero-section__image"
                   src="./images/hero-slider-2-large.avif"
-                  alt="slider-2"
+                  alt="slider image"
                 />
                 <img
                   class="hero-section__gradient"
                   src="./images/hero-slider-gradient-top.png"
+                  alt="gradient"
                 />
                 <div class="hero-section__text-part">
                   <h1 class="hero-section__title">What we do</h1>
@@ -252,7 +255,9 @@
                     At Phoenix Rail Engineering Services, we aim to offer a
                     fully comprehensive engineering & management support
                   </p>
-                  <div class="hero-section__read-more-button text-uppercase">
+                  <div
+                    class="hero-section__read-more-button hero-section__read-more-button--second text-uppercase"
+                  >
                     &#10148; read more
                   </div>
                 </div>
@@ -265,16 +270,18 @@
           >
             <img
               class="hero-section__button--sized"
-              src="./images/slider-arrow.png"
+              src="./images/slider-arrow.webp"
+              alt="slider arrow"
             />
           </button>
         </div>
       </section>
+      <!--                   Get in touch section                        -->
       <section class="get-in-touch-section" id="get-in-touch-section">
         <img
           class="get-in-touch-section__background"
           src="./images/activbackgroundlogo.webp"
-          alt=""
+          alt="background decoration"
         />
         <div class="get-in-touch-section__container">
           <div class="get-in-touch-section__info-part">
@@ -286,18 +293,16 @@
               />
               <p class="logo__text">Phoenix Rail Engineering Services</p>
             </a>
-            <p>Email address Example</p>
-            <p>Phone number Example</p>
+            <a
+              class="get-in-touch-section__contacts"
+              href="mailto:example@example.com"
+            >
+              Email address Example
+            </a>
+            <a class="get-in-touch-section__contacts" href="tel:+380000000000">
+              Phone number Example
+            </a>
           </div>
-
-          <!-- <iframe
-            class="get-in-touch-section__map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10160.512221593612!2d30.48970704760742!3d50.457340059028176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1721388920505!5m2!1sru!2sua"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe> -->
         </div>
 
         <div
@@ -312,7 +317,7 @@
             id="get-in-touch-section-form"
           >
             <div class="get-in-touch-section__contact-info-container">
-              <div class="input input--unlimited">
+              <div class="input">
                 <label
                   class="input__label visually-hidden"
                   for="user-name-contact"
@@ -449,62 +454,19 @@
           </nav>
           <nav class="footer__links">
             <p class="footer__links-title">Follow Us</p>
-            <a href="#" target="_blank">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              aria-label="Linkedin page"
+            >
               <svg class="footer__address-icon" width="72" height="72">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </a>
-            <a class="footer__address-link" href="#"> example@example.com </a>
+            <a class="footer__address-link" href="mailto:example@example.com">
+              example@example.com
+            </a>
           </nav>
-          <!-- <div class="footer__newsletter">
-            <h2 class="footer__newsletter-title">Newsletter</h2>
-            <p class="footer__newsletter-text">
-              View our latest newsletter here or subscribe below
-            </p>
-            <div class="footer__form">
-              <form name="footer-form" autocomplete="on" id="footer-form">
-                <div class="input">
-                  <label class="input__label visually-hidden" for="user-email">
-                    Email
-                  </label>
-                  <input
-                    class="input__control"
-                    type="email"
-                    name="user-email"
-                    id="user-email"
-                    placeholder="Email"
-                  />
-                </div>
-
-                <div class="input__button-container">
-                  <div class="checkbox">
-                    <div class="checkbox__container">
-                      <input
-                        class="checkbox__input checkbox__footer"
-                        type="checkbox"
-                        id="terms-conditions"
-                        name="terms-conditions"
-                      />
-                      <label
-                        class="checkbox__label"
-                        for="terms-conditions"
-                        id="terms-conditions-label"
-                      >
-                        Please tick to agree that you have read our Privacy
-                        Policy, and that you agree to receive emails from Global
-                        Infrastructure Group. Your email will not be used for
-                        any other purpose.
-                      </label>
-                    </div>
-                  </div>
-
-                  <button class="button__contact" type="submit">
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div> -->
         </div>
       </section>
       <section class="under-footer">
@@ -518,15 +480,27 @@
       </section>
     </footer>
 
-    <script src="./js/copyright-year.js"></script>
+    <script>
+      const getInTouchHash = window.location.hash;
+      if (getInTouchHash !== '#get-in-touch-section') {
+        const element = document.getElementById('get-in-touch-section');
+        if (element) {
+          element.scrollIntoView();
+        }
+      }
+    </script>
+
+    <script src="./js/logo-on-fire.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/hero-slider.js"></script>
+    <script src="./js/hero-slider-overlay.js"></script>
+    <script src="./js/hero-slider-image.js"></script>
+
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="./js/get-in-touch-form-validator.js"></script>
-    <script src="./js/footer-form-validator.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/hero-slider-image.js"></script>
-    <script src="./js/logo-on-fire.js"></script>
-    <script src="./js/hero-slider-overlay.js"></script>
+
+    <script src="./js/copyright-year.js"></script>
   </body>
 </html>

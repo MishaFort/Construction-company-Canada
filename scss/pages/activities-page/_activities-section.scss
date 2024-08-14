@@ -27,7 +27,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    /* margin-top: 30px; */ //if я надумаю сделать скрол на кнопки
     padding-top: 22px;
     font-size: 36px;
     font-weight: 500;
@@ -55,12 +54,6 @@
     margin: 18px 0;
   }
 
-  &__list {
-    margin: 18px 0;
-    padding-left: 20px;
-    list-style-type: disc;
-  }
-
   &__image-part {
     display: flex;
     align-items: center;
@@ -72,7 +65,4 @@
       order: 2;
     }
   }
-
-  /* &__image {
-  } */
 }

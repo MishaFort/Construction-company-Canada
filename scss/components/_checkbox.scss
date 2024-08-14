@@ -1,6 +1,5 @@
 .checkbox {
   display: flex;
-  /* margin-bottom: 6px; */
 
   &__radio-group {
     padding-bottom: 4px;
@@ -12,20 +11,13 @@
   }
 
   &__input {
-    /*  align-items: flex-start; */
-    border: solid 1px #707271;
+    border: solid 1px var(--color-primary-dark);
     border-radius: 8px;
     margin: 4px;
     width: 13px;
     height: 13px;
-    /* width: 100%; */
-    background-color: #fff;
-    color: #707271;
-    /* font-size: 18px; */
-
-    /*  &--footered {
-      margin: 0;
-    } */
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
   }
 
   &__label {
