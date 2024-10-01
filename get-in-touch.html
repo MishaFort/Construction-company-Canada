@@ -82,7 +82,7 @@
         </nav>
 
         <div class="header__container">
-          <a class="logo" href="">
+          <a class="logo" href="/">
             <img
               class="logo__image"
               src="./images/logo.webp"
@@ -201,7 +201,7 @@
           <div class="swiper-container">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <a class="hero-section__logo logo" href="">
+                <a class="hero-section__logo logo" href="/">
                   <img
                     class="logo__image"
                     src="./images/logo.webp"
@@ -231,7 +231,7 @@
                 </div>
               </li>
               <li class="swiper-slide">
-                <a class="hero-section__logo logo" href="">
+                <a class="hero-section__logo logo" href="/">
                   <img
                     class="logo__image"
                     src="./images/logo.webp"
@@ -293,15 +293,24 @@
               />
               <p class="logo__text">Phoenix Rail Engineering Services</p>
             </a>
-            <a
-              class="get-in-touch-section__contacts"
-              href="mailto:example@example.com"
-            >
-              Email address Example
-            </a>
-            <a class="get-in-touch-section__contacts" href="tel:+380000000000">
-              Phone number Example
-            </a>
+            <div class="get-in-touch-section__contacts-container">
+              <p class="get-in-touch-section__contacts-text">Email:</p>
+              <a
+                class="get-in-touch-section__contacts"
+                href="mailto:John.burn@phoenix-res.com"
+              >
+                John.burn@phoenix-res.com
+              </a>
+            </div>
+            <div class="get-in-touch-section__contacts-container">
+              <p class="get-in-touch-section__contacts-text">Phone:</p>
+              <a
+                class="get-in-touch-section__contacts"
+                href="tel:+380000000000"
+              >
+                Phone number Example
+              </a>
+            </div>
           </div>
         </div>
 
@@ -311,11 +320,23 @@
         >
           <h2 class="get-in-touch-section__form-title">Contact Form</h2>
 
+          <div
+            id="thank-you-message"
+            class="get-in-touch-section__thank-you-message"
+          >
+            Thank you for contacting us!
+          </div>
           <form
+            action="send_email.php"
+            method="POST"
             name="get-in-touch-section-form"
             autocomplete="on"
             id="get-in-touch-section-form"
+            style="position: relative"
           >
+            <div id="preloader" class="get-in-touch-section__preloader">
+              <div class="get-in-touch-section_preloader-image"></div>
+            </div>
             <div class="get-in-touch-section__contact-info-container">
               <div class="input">
                 <label
@@ -326,7 +347,7 @@
                 </label>
                 <input
                   class="input__control input__control--autocompleted"
-                  type="name"
+                  type="text"
                   name="user-name-contact"
                   id="user-name-contact"
                   placeholder="Name"
@@ -385,7 +406,7 @@
                       name="email-contact"
                     />
                     <label
-                      class="checkbox__label--contact"
+                      class="checkbox__label checkbox__label--contact"
                       for="email-contact"
                       id="email-label-contact"
                     >
@@ -403,7 +424,7 @@
                       name="telephone-contact"
                     />
                     <label
-                      class="checkbox__label--contact"
+                      class="checkbox__label checkbox__label--contact"
                       for="telephone-contact"
                       id="telephone-label-contact"
                     >
@@ -422,7 +443,7 @@
                     name="terms-conditions-contact"
                   />
                   <label
-                    class="checkbox__label--contact"
+                    class="checkbox__label checkbox__label--contact"
                     for="terms-conditions-contact"
                     id="terms-conditions-label-contact"
                   >
@@ -432,7 +453,14 @@
                 </div>
               </div>
 
-              <button class="button__contact" type="submit">Send</button>
+              <button
+                id="button-final"
+                class="button__contact"
+                type="submit"
+                name="submitContact"
+              >
+                Send
+              </button>
             </div>
           </form>
         </div>
@@ -502,5 +530,8 @@
     <script src="./js/get-in-touch-form-validator.js"></script>
 
     <script src="./js/copyright-year.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

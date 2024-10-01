@@ -1,0 +1,50 @@
+[27-Sep-2024 18:23:59 UTC] PHP Warning:  Undefined array key "user-name-contact" in /home/f0wdhf3ka3af/public_html/send_email.php on line 3
+[27-Sep-2024 18:23:59 UTC] PHP Warning:  Undefined array key "user-email-contact" in /home/f0wdhf3ka3af/public_html/send_email.php on line 4
+[27-Sep-2024 18:23:59 UTC] PHP Warning:  Undefined array key "user-tel-contact" in /home/f0wdhf3ka3af/public_html/send_email.php on line 5
+[27-Sep-2024 18:25:37 UTC] PHP Warning:  Undefined array key "user-name-contact" in /home/f0wdhf3ka3af/public_html/send_email.php on line 3
+[27-Sep-2024 18:25:37 UTC] PHP Warning:  Undefined array key "user-email-contact" in /home/f0wdhf3ka3af/public_html/send_email.php on line 4
+[27-Sep-2024 18:25:37 UTC] PHP Warning:  Undefined array key "user-tel-contact" in /home/f0wdhf3ka3af/public_html/send_email.php on line 5
+[27-Sep-2024 18:29:01 UTC] PHP Warning:  include(class.phpmailer.php): Failed to open stream: No such file or directory in /home/f0wdhf3ka3af/public_html/send_email.php on line 2
+[27-Sep-2024 18:29:01 UTC] PHP Warning:  include(): Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/f0wdhf3ka3af/public_html/send_email.php on line 2
+[27-Sep-2024 18:31:08 UTC] PHP Warning:  include(class.phpmailer.php): Failed to open stream: No such file or directory in /home/f0wdhf3ka3af/public_html/send_email.php on line 2
+[27-Sep-2024 18:31:08 UTC] PHP Warning:  include(): Failed opening 'class.phpmailer.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/f0wdhf3ka3af/public_html/send_email.php on line 2
+[27-Sep-2024 19:39:55 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "localhost" in /home/f0wdhf3ka3af/public_html/send_email.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/f0wdhf3ka3af/public_html/send_email.php on line 15
+[27-Sep-2024 19:41:07 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "localhost" in /home/f0wdhf3ka3af/public_html/send_email.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/f0wdhf3ka3af/public_html/send_email.php on line 15
+[27-Sep-2024 19:41:34 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "localhost" in /home/f0wdhf3ka3af/public_html/send_email.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/f0wdhf3ka3af/public_html/send_email.php on line 15
+[28-Sep-2024 07:12:48 UTC] PHP Warning:  Undefined array key "name" in /home/f0wdhf3ka3af/public_html/send_email.php on line 3
+[28-Sep-2024 07:12:48 UTC] PHP Warning:  Undefined array key "email" in /home/f0wdhf3ka3af/public_html/send_email.php on line 4
+[28-Sep-2024 07:12:48 UTC] PHP Warning:  Undefined array key "message" in /home/f0wdhf3ka3af/public_html/send_email.php on line 5
+[28-Sep-2024 07:26:21 UTC] PHP Warning:  Undefined array key "name" in /home/f0wdhf3ka3af/public_html/send_email.php on line 3
+[28-Sep-2024 07:26:21 UTC] PHP Warning:  Undefined array key "email" in /home/f0wdhf3ka3af/public_html/send_email.php on line 4
+[28-Sep-2024 07:26:21 UTC] PHP Warning:  Undefined array key "message" in /home/f0wdhf3ka3af/public_html/send_email.php on line 5
+[28-Sep-2024 10:37:22 UTC] PHP Warning:  Undefined array key "name" in /home/f0wdhf3ka3af/public_html/send_email.php on line 3
+[28-Sep-2024 10:37:22 UTC] PHP Warning:  Undefined array key "email" in /home/f0wdhf3ka3af/public_html/send_email.php on line 4
+[28-Sep-2024 10:37:22 UTC] PHP Warning:  Undefined array key "message" in /home/f0wdhf3ka3af/public_html/send_email.php on line 5
+[28-Sep-2024 10:38:14 UTC] PHP Warning:  Undefined array key "name" in /home/f0wdhf3ka3af/public_html/send_email.php on line 3
+[28-Sep-2024 10:38:14 UTC] PHP Warning:  Undefined array key "email" in /home/f0wdhf3ka3af/public_html/send_email.php on line 4
+[28-Sep-2024 10:38:14 UTC] PHP Warning:  Undefined array key "message" in /home/f0wdhf3ka3af/public_html/send_email.php on line 5
+[28-Sep-2024 10:40:39 UTC] PHP Warning:  Undefined array key "name" in /home/f0wdhf3ka3af/public_html/send_email.php on line 3
+[28-Sep-2024 10:40:39 UTC] PHP Warning:  Undefined array key "email" in /home/f0wdhf3ka3af/public_html/send_email.php on line 4
+[28-Sep-2024 10:40:39 UTC] PHP Warning:  Undefined array key "message" in /home/f0wdhf3ka3af/public_html/send_email.php on line 5
+[28-Sep-2024 10:45:48 UTC] PHP Warning:  Undefined array key "name" in /home/f0wdhf3ka3af/public_html/send_email.php on line 3
+[28-Sep-2024 10:45:48 UTC] PHP Warning:  Undefined array key "email" in /home/f0wdhf3ka3af/public_html/send_email.php on line 4
+[28-Sep-2024 10:45:48 UTC] PHP Warning:  Undefined array key "message" in /home/f0wdhf3ka3af/public_html/send_email.php on line 5
+[28-Sep-2024 10:47:05 UTC] PHP Warning:  Undefined array key "name" in /home/f0wdhf3ka3af/public_html/send_email.php on line 3
+[28-Sep-2024 10:47:05 UTC] PHP Warning:  Undefined array key "email" in /home/f0wdhf3ka3af/public_html/send_email.php on line 4
+[28-Sep-2024 10:47:05 UTC] PHP Warning:  Undefined array key "message" in /home/f0wdhf3ka3af/public_html/send_email.php on line 5
+[28-Sep-2024 10:48:51 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/f0wdhf3ka3af/public_html/send_email.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/f0wdhf3ka3af/public_html/send_email.php on line 37
+[28-Sep-2024 10:54:36 UTC] PHP Warning:  Undefined array key "name" in /home/f0wdhf3ka3af/public_html/send_email.php on line 3
+[28-Sep-2024 10:54:36 UTC] PHP Warning:  Undefined array key "email" in /home/f0wdhf3ka3af/public_html/send_email.php on line 4
+[28-Sep-2024 10:54:36 UTC] PHP Warning:  Undefined array key "message" in /home/f0wdhf3ka3af/public_html/send_email.php on line 5
